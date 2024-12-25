@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Wara Yasy Pacheco Arandia">
+  <meta name="description" content="Recetario estacional enfocado en alimentos de la temporada">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../imagenes/Casia.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Casia | Contacto</title>
+</head>
+
+<body>
+  <header>
+    <div class="encabezado">
+      <img src="../imagenes/Casia-resaltar.svg" alt="Casia">
+      <h1 class="encabezado--titulo">CONTACTO</h1>
+      <div class="encabezado--separador"></div>
+    </div>
+  </header>
+  <!-- Barra de navegación -->
+  <nav class="menu">
+    <div class="menu--etiqueta">
+      <a href="../index.html"><img src="../imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
+    </div>
+    <div class="menu--separador"></div>
+    <div class="menu--items">
+      <div class="menu--item">
+        <a href="../index.html#estaciones">Estaciones</a>
+      </div>
+      <div class="menu--item"><a href="recetario.html">Recetario</a></div>
+      <div class="menu--item"><a href="formReceta.html">Comparte</a></div>
+      <div class="menu--item"><a href="contacto.html">Contacto</a></div>
+    </div>
+  </nav>
+  <!-- Fin barra de navegación -->
+  <main>
+    <section class="contact-grid">
+      <!-- Formulario de contacto -->
+      <div class="contact-form">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post" id="formulario-envio-recetas" class="contenedor-envio-recetas--formulario"
+          enctype="multipart/form-data">
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <label class="contenedor-envio-recetas--etiqueta-formulario">Nombre</label>
+            <input type="text" placeholder="Tu nombre" name="nombre" id="nombre-emisor"
+              class="contenedor-envio-recetas--input-formulario" required>
+          </div>
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <label class="contenedor-envio-recetas--etiqueta-formulario">Correo Electrónico</label>
+            <input type="email" placeholder="nombre@ejemplo.com" name="mail" id="mail-emisor"
+              class="contenedor-envio-recetas--input-formulario" required>
+          </div>
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <label class="contenedor-envio-recetas--etiqueta-formulario">Escribe tu mensaje</label>
+            <textarea name="consulta" placeholder="Escribe aquí" id="consulta-input"
+              class="contenedor-envio-recetas--textarea-formulario" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="contenedor-envio-recetas--grupo-formulario politicas">
+            <input name="consentimiento" id="instrucciones-input" type="radio"
+              class="contenedor-envio-recetas--textarea-formulario" required>
+            <label>Acepto las
+              <a href="https://www.aepd.es/derechos-y-deberes/ejerce-tus-derechos" target="-blank">Políticas de Privacidad</a>
+              y
+              <a href="https://policies.google.com/privacy#whycollect" target="-blank">Política de Cookies</a>. Puedes
+              modificar tus preferencias en cualquier
+              momento.</label>
+          </div>
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <input type="submit" value="Enviar" id="boton-envio-receta"
+              class="contenedor-envio-recetas--boton-formulario">
+          </div>
+        </form>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <h2>Nuestro Newsletter</h2>
+        <input type="email" placeholder="Email">
+        <p>
+          ¡Suscríbete a nuestro boletín y lleva la magia de cada temporada a
+          tu cocina! Recibe recetas exclusivas y fáciles de preparar,
+          inspiradas en los ingredientes frescos de cada estación y en las
+          festividades más especiales. Desde ideas para cenas navideñas hasta
+          platillos refrescantes de verano, serás el primero en descubrir
+          nuestras nuevas recetas y consejos culinarios. ¡Déjate inspirar y
+          sorprende a tus seres queridos con deliciosas creaciones todo el
+          año!
+        </p>
+        <button class="contenedor-envio-recetas--boton-formulario" disabled>
+          ¡Muy Pronto!
+        </button>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="contact-info">
+        <!-- Teléfono -->
+        <div class="contact-item">
+          <img src="../imagenes/circulo-de-telefono.png" alt="Correo" class="icon">
+          <p>
+            <a href="tel:+123456789" class="enlace--contacto">(+34) 678 765 665</a>
+          </p>
+          <p>¿Te interesa colaborar con Contacto? ¡Llámanos!</p>
+        </div>
+
+        <!-- Correo -->
+        <div class="contact-item">
+          <img src="../imagenes/sobre.png" alt="Correo" class="icon">
+          <p>
+            <a href="mailto:contacto@casia.com" class="enlace--contacto">contacto@casia.com</a>
+          </p>
+          <p>Envíanos tu dudas y consultas.</p>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="contact-item">
+          <img src="../imagenes/marcador.png" alt="Ubicación" class="icon">
+          <p>Vitoria-Gasteiz, Álava, España</p>
+          <p>Nuestro equipo trabaja desde la capital Alvesa</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer--contenedor">
+      <div class="footer--columna footer--columna--logo">
+        <img src="../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
+        <h2 class="footer--titulo">Recetario Estacional</h2>
+      </div>
+      <div class="footer--columna footer--columna--enlaces">
+        <h3 class="footer--subtitulo">Enlaces Útiles</h3>
+        <ul class="footer--lista-enlaces">
+          <li class="footer--enlace-item">
+            <a class="footer--enlace" href="../index.html">Inicio</a>
+          </li>
+          <li class="footer--enlace-item">
+            <a class="footer--enlace" href="recetario.html">Recetario</a>
+          </li>
+          <li class="footer--enlace-item">
+            <a class="footer--enlace" href="Recetas/otono_cupcake_calabaza.html">Nuestra última receta</a>
+          </li>
+          <li class="footer--enlace-item">
+            <a class="footer--enlace" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer--columna footer--columna--contacto">
+        <h3 class="footer--subtitulo">Contacto</h3>
+        <p class="footer--correo">
+          Email:
+          <a href="mailto:contacto@casia.com" class="footer--enlace">contacto@casia.com</a>
+        </p>
+        <p class="footer--telefono">
+          Teléfono:
+          <a href="tel:+123456789" class="footer--enlace">(+34) 678 765 665</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer--derechos">
+      <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardin</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

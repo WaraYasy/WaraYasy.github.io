@@ -1,0 +1,2050 @@
+/*
+PÁGINA: CASIA Recetario Estacional
+Estilo principal para Pantallas de min 1024px
+
+***HOJA DE ESTILOS***
+LISTA DE CONTENIDOS
+01. Fuentes
+02.Colores y estilos
+03. Generales
+04. Barra de Navegacion
+05. Portada
+06. Blockquote
+07. Estaciones 
+08. Recetario
+09. Modelo Receta
+10. Audio 
+11. Cookie  
+12. Footer
+13. Formulario Recetas 
+14. Contacto 
+15. Espera 
+16. Media Tablets
+17. Media Móviles 
+18. Media Print  
+*/
+
+/******************************/
+/*         01. FUENTES        */
+/******************************/
+/* Poppins */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Berkshire */
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/******************************/
+/*    02.Colores y Estilos    */
+/******************************/
+
+:root {
+  --principal: #6b4226;
+  --secundario: #3b2813;
+  --tercero: #8c6a4d;
+  --apoyo: #db6d13;
+  --resaltar: #f2e7dc;
+  --estaciones: #6e1400;
+  --fondo-principal: #f4f4f4;
+  --fondo: #ffffffc9;
+  --fondo-recetas: #d6cbc2;
+  --sombra: rgba(0, 0, 0, 0.2);
+  --sombra-texto: 0 0 0.5em black;
+  --sombra-texto2: 0 0 0.2em #f2e7dc2d;
+  --sombra-tierra: 0.1rem 0.1rem 0.3rem rgba(139, 69, 19, 0.5), 0 0 1.5rem rgba(210, 180, 140, 0.6);
+  --sombra-inset: rgba(68, 42, 13, 0.05);
+  --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  --fontPrincipal: Berkshire Swash, serif;
+  --fontSecundaria: Poppins;
+}
+
+/******************************/
+/*        03.Generales        */
+/******************************/
+
+* {
+  font-family: var(--fontSecundaria);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  /* Para Safari y Chrome */
+  background-color: var(--fondo-principal);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.encabezado {
+  width: 80%;
+  height: 12em;
+  margin: 0 auto;
+  border-radius: 0 0 2em 2em;
+  background-color: var(--principal);
+  text-align: center;
+}
+
+.encabezado>img {
+  width: 5em;
+}
+
+.encabezado--titulo {
+  margin: 0;
+  color: var(--resaltar);
+  font-size: 3.5em;
+  font-family: var(--fontPrincipal);
+  text-shadow: var(--sombra-tierra);
+}
+
+.encabezado--titulo {
+  position: relative;
+  margin-bottom: 5em;
+  color: var(--resaltar);
+  font-size: 3.5em;
+  font-family: var(--fontPrincipal);
+}
+
+.encabezado--titulo::before,
+.encabezado--titulo::after {
+  content: "·";
+  font-size: 1em;
+  color: var(--resaltar);
+}
+
+.derechos-autor {
+  font-size: 0.6em;
+  color: var(--secundario);
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.enlace-contenedor {
+  width: 100%;
+  text-align: center;
+}
+
+.enlaceInterno {
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 500;
+  color: var(--resaltar);
+  background-color: var(--apoyo);
+  border-radius: 2em;
+  cursor: pointer;
+  -webkit-transition: box-shadow 0.3s ease;
+  /* Safari/Chrome */
+  -moz-transition: box-shadow 0.3s ease;
+  /* Firefox */
+  transition: box-shadow 0.3s ease;
+  /* Estándar */
+}
+
+.enlaceInterno:hover {
+  box-shadow: var(--sombra-tierra);
+  -webkit-box-shadow: var(--sombra-tierra);
+  /* Safari/Chrome */
+  -moz-box-shadow: var(--sombra-tierra);
+  /* Firefox */
+}
+
+
+/******************************/
+/*   04.Barra de Navegacion   */
+/******************************/
+
+.menu {
+  font-weight: 500;
+  color: var(--principal);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  gap: 0.9rem;
+  padding: 0.9375rem;
+  background-color: #ffffffae;
+  border-radius: 1.25rem;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.menu:hover {
+  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.1875rem);
+}
+
+/* Estilo para la etiqueta principal con imagen */
+.menu--etiqueta {
+  cursor: pointer;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+  position: relative;
+}
+
+.menu--logo {
+  width: 2.5rem;
+  height: auto;
+}
+
+/* Ocultar elementos del menú por defecto */
+.menu--items {
+  padding-left: 0.1em;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.9375rem;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(0.625rem);
+}
+
+/* Mostrar elementos del menú al hacer hover en la etiqueta */
+.menu:hover .menu--items {
+  padding-right: 0.9375rem;
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo de la barra separadora */
+.menu--separador {
+  width: 5rem;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.menu:hover .menu--separador {
+  display: block;
+}
+
+.menu--separador:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.0625rem;
+  width: 0%;
+  background-color: #000000;
+  transition: width 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+.menu:hover .menu--separador:before {
+  width: 100%;
+}
+
+/* Estilo de cada elemento de menú */
+.menu--item {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(0.625rem);
+}
+
+.menu--item a {
+  color: var(--principal);
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.menu--item:hover a {
+  color: var(--tercero);
+}
+
+.menu:hover .menu--item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/******************************/
+/*         05.Portada         */
+/******************************/
+
+.portada {
+  background-image: url("../imagenes/pastel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+
+  /* Animación de desvanecimiento de la imagen de fondo */
+  animation: fadeInBackground 3s ease-out;
+  /* 3 segundos de desvanecimiento */
+}
+
+.portada--cuadro {
+  margin-top: 5.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  /* Animación de fade-in para los elementos dentro del cuadro */
+}
+
+.portada--titulo {
+  font-family: var(--fontPrincipal);
+  color: var(--principal);
+  font-size: 6em;
+  text-shadow: 0.05em 0.05em 0.1em var(--sombra),
+    -0.05em -0.05em 0.05em var(--tercero);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.portada--descripcion {
+  font-weight: 420;
+  color: var(--secundario);
+}
+
+.portada--flecha {
+  font-size: 2.5em;
+  color: var(--principal);
+  cursor: pointer;
+  animation: bounce 2.5s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portada--flecha:hover {
+  cursor: pointer;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.5em);
+  }
+}
+
+/* Animación de entrada para los elementos dentro del cuadro */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de desvanecimiento para la imagen de fondo */
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/******************************/
+/*        06.Blockquote       */
+/******************************/
+.seccion2 {
+  width: 100%;
+  height: 100vh;
+  margin-top: 2em;
+}
+
+.cita--contenedor {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.cita {
+  width: 80%;
+  max-width: 45rem;
+  margin: 8em auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.cita--enlace {
+  font-family: var(--fontSecundaria);
+}
+
+.cita--texto {
+  font-family: var(--fontPrincipal);
+  font-size: 3rem;
+  color: var(--principal);
+  margin: 0;
+}
+
+.cita--footer {
+  margin-top: 1.5rem;
+}
+
+.cita--enlace {
+  font-family: var(--fontSecundaria);
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--secundario);
+  padding: 0.625rem;
+  border-top: solid 0.2rem var(--tercero);
+  display: inline-block;
+}
+
+/******************************/
+/*        07.Estaciones        */
+/******************************/
+.seccion-tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--fondo-principal);
+}
+
+.seccion-tarjetas--contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  /* Se mantiene en em para control relativo */
+  gap: 2em;
+  width: 90%;
+  padding: 2em;
+  margin: 2em 0;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 18.75rem;
+  ;
+  /* Ajustado proporcionalmente */
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.seccion-tarjetas--festividades {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta.festividades {
+  width: 80%;
+  height: 9.375rem;
+  background-image: url("../imagenes/festividades.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.tarjeta.tarjetat.estaciones--otono {
+  background-image: url("../imagenes/calabazasFall.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.tarjeta.tarjetat.estaciones--invierno {
+  background-image: url("../imagenes/invierno.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.tarjeta.tarjetat.estaciones--verano {
+  background-image: url("../imagenes/verano.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.tarjeta.tarjetat.estaciones--primavera {
+  background-image: url("../imagenes/primavera3.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.circulo {
+  font-size: 3.125rem;
+  color: var(--resaltar);
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--principal);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+}
+
+.circulo>a>img {
+  margin: auto;
+  width: 2rem;
+}
+
+.circulo:hover {
+  background: var(--tercero);
+}
+
+.tarjeta>h2 {
+  font-family: var(--fontPrincipal);
+  text-shadow: var(--sombra-texto);
+  font-size: 1.5rem;
+  color: var(--resaltar);
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 999;
+}
+
+.tarjeta>.tags {
+  z-index: 988;
+  font-size: 0.6875rem;
+  color: #000;
+  position: absolute;
+  bottom: 1.25rem;
+  display: flex;
+}
+
+.etiqueta {
+  color: var(--principal);
+  background-color: var(--fondo-principal);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0 0.3125rem;
+  text-decoration: none;
+}
+
+input[id^="modal"] {
+  display: none;
+}
+
+/******************************/
+/*         08.Recetario       */
+/******************************/
+.recetario {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--fondo-principal);
+}
+
+.receta-container {
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: var(--fondo-recetas);
+}
+
+.receta-container:hover {
+  transform: scale(1.05);
+}
+
+/* Cartel nombre de la estacion */
+.estacion-fija {
+  margin-right: 0;
+  position: fixed;
+  padding: 0.5em 0.8em;
+  right: 0.05em;
+  top: 0.5em;
+  display: none;
+  z-index: 1000;
+
+  transition: background 0.3s ease-in-out;
+  background: var(--estaciones);
+  border-radius: 1em 0 0 1em;
+  color: var(--resaltar);
+  text-align: left;
+  font-size: 2rem;
+  text-shadow: var(--sombra-texto2);
+}
+
+.receta--imagen {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  /* Establece una relación de aspecto cuadrada */
+  border-radius: 1rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  /* Asegura que la imagen cubra el área sin distorsión */
+}
+
+/* Estilos internos de cada tarjeta */
+.receta {
+  padding: 2rem;
+  color: var(--resaltar);
+  justify-content: center;
+  align-items: center;
+}
+
+.receta--estacion {
+  font-size: 3.125rem;
+  color: var(--resaltar);
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--principal);
+  border-radius: 50%;
+}
+
+.receta--estacion--icono {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.receta--estacion--icono img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.receta--titulo {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.receta--titulo>header {
+  text-shadow: var(--sombra-texto);
+  font-family: var(--fontPrincipal);
+}
+
+.receta--detalles {
+  font-family: var(--fontSecundaria);
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.4em;
+  margin-top: 1.5rem;
+}
+
+.receta--detalles--lista h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--apoyo);
+  margin: 0;
+}
+
+.receta--detalles--lista p {
+  color: var(--secundario);
+}
+
+.receta--boton--informacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.receta--boton--informacion a {
+  background-color: var(--resaltar);
+  color: var(--principal);
+  padding: 0.8rem 1.5rem;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0.03125rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+/******************************/
+/*       09.Modelo Receta      */
+/******************************/
+
+.postre {
+  display: grid;
+  grid-template-areas:
+    "encabezado encabezado"
+    "imagen informacion"
+    "ingredientes preparacion"
+    "reproductor reproductor";
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  background-color: var(--fondo-postres);
+  border-radius: 2em;
+  padding: 3em;
+  max-width: 64rem;
+  margin: 3em auto;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+.postre:hover {
+  transform: translateY(-0.3125rem);
+}
+
+.postre--encabezado {
+  grid-area: encabezado;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postre--imagen {
+  grid-area: imagen;
+  width: 90%;
+  padding: 1em;
+  border-radius: 4em;
+  object-fit: cover;
+}
+
+.postre--informacion {
+  grid-area: informacion;
+  padding: 0.9rem;
+}
+
+.postre--ingredientes {
+  grid-area: ingredientes;
+}
+
+.postre--preparacion {
+  grid-area: preparacion;
+}
+
+/* Estilos para los títulos y etiquetas */
+.postre--titulo {
+  font-family: var(--fontPrincipal);
+  font-size: 4rem;
+  color: var(--principal);
+  margin: 0.5em 0;
+}
+
+.postre--descripcion {
+  font-size: 1rem;
+  color: var(--secundario);
+}
+
+.postre--autor,
+.postre--tiempo-preparacion {
+  font-size: 0.9rem;
+  color: var(--tercero);
+}
+
+.postre--etiquetas {
+  margin-top: 1em;
+}
+
+.postre--etiqueta {
+  display: inline-block;
+  background-color: var(--apoyo);
+  color: var(--resaltar);
+  padding: 0.5em 0.8em;
+  border-radius: 2em;
+  margin: 0.1em;
+  font-size: 0.8rem;
+}
+
+.postre--estacion {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.postre--estacion--icono {
+  width: 2em;
+  height: 2em;
+}
+
+.postre--titulo-seccion {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--principal);
+  margin-top: 2em;
+  border-bottom: 0.1em solid var(--secundario);
+  padding-bottom: 0.5em;
+}
+
+.postre--lista-ingredientes,
+.postre--pasos-preparacion {
+  list-style: none;
+  padding: 0;
+}
+
+.postre--ingrediente-item,
+.postre--paso {
+  padding: 1em;
+  background-color: var(--fondo-principal);
+  border-radius: 2em;
+  transition: background-color 0.3s;
+}
+
+.postre--ingrediente-item:hover,
+.postre--paso:hover {
+  background-color: var(--fondo-recetas);
+}
+
+/******************************/
+/*           10.Audio         */
+/******************************/
+.track-player {
+  grid-area: reproductor;
+  background: var(--fondo);
+  border-radius: 2em;
+  padding: 1em;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.track-title {
+  font-family: var(--fontSecundaria);
+  font-size: 1rem;
+  color: var(--principal);
+  text-align: center;
+  margin: 0;
+}
+
+.track-title-song {
+  font-family: var(--fontPrincipal);
+  font-size: 1.5rem;
+  color: var(--estaciones);
+  margin: 0;
+}
+
+audio {
+  width: 90%;
+  margin: auto;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+
+.track-info {
+  margin: 0.625rem 0;
+  color: var(--secundario);
+  text-align: center;
+}
+
+.track-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.track-artist {
+  font-size: 0.8rem;
+}
+
+/******************************/
+/*           11.Cookie        */
+/******************************/
+
+.aviso-cookies {
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f7f4bc;
+  color: var(--secundario);
+  padding: 1.5em;
+  border-radius: 0.5em;
+  display: none;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  z-index: 1000;
+  font-size: 1em;
+}
+
+.aviso-cookies p {
+  text-align: center;
+}
+
+.aviso-cookies p img {
+  width: 2rem;
+}
+
+.aviso-cookies button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#aceptar-btn {
+  background-color: var(--estaciones);
+  color: white;
+}
+
+#rechazar-btn {
+  background-color: var(--tercero);
+  color: white;
+}
+
+/******************************/
+/*           12.Footer        */
+/******************************/
+.footer {
+  background-color: var(--fondo-principal);
+  color: var(--secundario);
+  padding: 2.5rem 1.25rem;
+  font-family: var(--fontSecundaria);
+}
+
+.footer--contenedor {
+  max-width: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer--columna {
+  flex: 1;
+  margin: 0 1.25rem;
+}
+
+.footer--columna--logo {
+  text-align: center;
+}
+
+.footer--logo {
+  width: 6.25rem;
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+.footer--titulo {
+  font-family: var(--fontPrincipal);
+  font-size: 1.5rem;
+  color: var(--apoyo);
+}
+
+.footer--subtitulo {
+  font-size: 1.2rem;
+  color: var(--principal);
+  margin-bottom: 0.625rem;
+  text-align: left;
+}
+
+.footer--lista-enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer--enlace-item {
+  margin: 0.3125rem 0;
+}
+
+.footer--enlace {
+  color: var(--apoyo);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer--enlace:hover {
+  color: var(--principal);
+}
+
+.footer--derechos {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--tercero);
+  margin-top: 1.25rem;
+}
+
+/******************************/
+/*     13.Formulario Recetas   */
+/******************************/
+
+#contenedor-envio-recetas {
+  border: solid 0.1875rem var(--tercero);
+  border-radius: 2em;
+  max-width: 60%;
+  margin: 3.75rem auto;
+  position: relative;
+}
+
+.contenedor-envio-recetas--titulo {
+  color: var(--principal);
+  font-size: 3em;
+  font-family: var(--fontPrincipal);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedor-envio-recetas--subrayado {
+  border-bottom: solid 0.125em var(--secundario);
+  margin: -0.5em auto; 
+  width: 12.5em; 
+}
+
+.contenedor-envio-recetas--formulario {
+  padding: 2.34375em; 
+  margin: 3.125em 0;  
+  
+}
+
+.contenedor-envio-recetas--campo {
+  margin-bottom: 1.875em;
+}
+
+.contenedor-envio-recetas--etiqueta-formulario {
+  color: var(--principal);
+  font-size: 1em;
+  font-weight: 500;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+  background: none;
+  border: none;
+  border-bottom: solid 0.125em var(--resaltar);
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
+  padding: 0.5em 0;
+  margin: 0.5em auto;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: solid 0.125em var(--principal);
+}
+
+input[type="file"] {
+  background-color: var(--tercero);
+  color: var(--resaltar);
+  border-radius: 1em;
+  padding: 0.8em;
+}
+
+textarea {
+  line-height: 150%;
+  height: 9.375em;
+  resize: none;
+}
+
+.contenedor-envio-recetas--boton-formulario {
+  border: none;
+  padding: 0.8em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--principal);
+  color: var(--resaltar);
+  border-radius: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contenedor-envio-recetas--boton-formulario:hover {
+  background-color: var(--tercero);
+  color: var(--resaltar);
+}
+
+.contenedor-envio-recetas--boton:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+
+
+
+/******************************/
+/*          14.Contacto       */
+/******************************/
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  width: 90%;
+  margin: 2em;
+  padding: 2em;
+}
+
+.contact-form {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.contact-form h2,
+.newsletter h2 {
+  text-align: center;
+  color: var(--apoyo);
+  font-family: var(--fontPrincipal);
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.contact-form form {
+  margin: 0;
+}
+
+.politicas {
+  margin: 1em 0;
+}
+
+.newsletter {
+  background-color: rgba(255, 255, 255, 0.444);
+  padding: 2em;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #ccc;
+  margin-bottom: 0.625rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  grid-column: span 3;
+  margin-top: 1em;
+  gap: 0.625rem;
+}
+
+.contact-item {
+  flex: 1;
+  background-color: var(--tercero);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item:hover {
+  background-color: #8c6a4de5;
+}
+
+.contact-item p,
+.contact-item a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.3125rem 0;
+  color: white;
+}
+
+.enlace--contacto:hover {
+  font-weight: 600;
+}
+
+.contact-item p:hover {
+  color: var(--resaltar);
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.3125rem;
+  vertical-align: middle;
+}
+
+/******************************/
+/*        15.Espera           */
+/******************************/
+.encabezado-espera {
+  width: 80%;
+  height: 8em;
+  margin: 0 auto;
+  border-radius: 0 0 2em 2em;
+  background-color: var(--principal);
+  text-align: center;
+}
+
+.encabezado-espera>img {
+  width: 5em;
+  margin-top: 1em;
+}
+
+.encabezado--espera--titulo {
+  margin: 0;
+  color: var(--resaltar);
+  font-size: 3.5em;
+  font-family: var(--fontPrincipal);
+  text-shadow: var(--sombra-tierra);
+  /* Sombra en tonos tierra */
+}
+
+.encabezado--espera--titulo {
+  position: relative;
+  margin-bottom: 5em;
+  margin: 0;
+  color: var(--resaltar);
+  font-size: 3.5em;
+  font-family: var(--fontPrincipal);
+}
+
+.encabezado--espera--titulo::before,
+.encabezado--esperao--titulo::after {
+  content: "·";
+  /* Caracter decorativo */
+  font-size: 1em;
+  /* Tamaño del símbolo */
+  color: var(--resaltar);
+  /* Color que desees */
+}
+
+.espera-contenedor {
+  margin-top: 1em;
+  width: 100%;
+  background-image: url(../imagenes/fondo-espera.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.espera--area--texto {
+  text-align: center;
+  width: 60%;
+
+  margin: auto;
+}
+
+.espera--area--texto h2 {
+  color: var(--apoyo);
+  font-family: var(--fontPrincipal);
+  font-size: 3em;
+}
+
+.espera--area--texto p {
+  font-family: var(--fontSecundaria);
+  font-weight: 300;
+}
+
+.espera--area--imagen {
+  position: relative;
+  bottom: 0;
+  left: 0.1em;
+}
+
+.espera--area--imagen>img {
+  width: 20em;
+  margin: 0;
+}
+
+.espera--area--enlace-contenedor {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.espera--area--enlaceInterno {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  background-color: var(--tercero);
+  padding: 1rem;
+  border-radius: 2em;
+}
+
+.espera--area--enlaceInterno:hover {
+  box-shadow: var(--sombra-tierra);
+}
+
+/*******************************/
+/*       16.Media Tablets      */
+/*******************************/
+
+
+/* Min-width 992px */
+@media (max-width: 1024px) {
+  .menu {
+    text-align: center;
+    margin-top: 0.5em;
+    height: 3rem;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0.625rem;
+    left: 1.25rem;
+    padding: 0.9375rem;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .menu--etiqueta {
+    margin-bottom: 0.625rem;
+  }
+
+  .menu--logo {
+    width: 2.5rem;
+  }
+
+  .menu--separador {
+    width: 100%;
+    margin: 0.3125rem 0;
+    display: none;
+  }
+
+  .menu:hover .menu--separador {
+    display: block;
+  }
+
+  .menu--items {
+    padding-left: 0.8em;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    opacity: 0;
+    transform: translateY(-0.625rem);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .menu:hover .menu--items {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .menu:hover {
+    height: 15.625rem;
+    padding: 0.625rem;
+  }
+
+  .portada--titulo {
+    font-size: 4em;
+
+  }
+
+  /* Encabezado */
+  .encabezado {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    height: 7em;
+  }
+
+  .encabezado>img {
+    width: 4em;
+  }
+
+  .encabezado--titulo {
+    font-size: 3em;
+  }
+
+  /*Tarjetas Estaciones*/
+  .seccion2 {
+    padding: 2em 0;
+    margin-bottom: 5em;
+  }
+
+  .seccion-tarjetas--contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  .seccion-tarjetas {
+    padding-top: 8em;
+    padding-bottom: 5em;
+    margin-bottom: 5em;
+  }
+
+
+  /* Receta */
+  .postre {
+    grid-template-areas:
+      "encabezado"
+      "imagen"
+      "informacion"
+      "ingredientes"
+      "preparacion"
+      "reproductor";
+    grid-template-columns: 1fr;
+    padding: 2em;
+  }
+
+  .postre--titulo {
+    font-size: 2.5rem;
+  }
+
+  .postre--imagen {
+    width: 100%;
+  }
+
+  .espera--area--imagen>img {
+    width: 12em;
+    margin: 0;
+  }
+
+  /* Contacto */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-grid>div {
+    grid-column: 1 / -1;
+    margin-bottom: 1em;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+}
+
+/******************************/
+/*       17.Media Móviles     */
+/******************************/
+/* Minimo 500 */
+@media (max-width: 768px) {
+  .menu {
+    text-align: center;
+    margin-top: 1em;
+    height: 3rem;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0.625rem;
+    left: 1.25rem;
+    padding: 0.9375rem;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .menu--etiqueta {
+    margin-bottom: 0.625rem;
+  }
+
+  .menu--logo {
+    width: 2.5rem;
+  }
+
+  .menu--separador {
+    width: 100%;
+    margin: 0.3125rem 0;
+    display: none;
+  }
+
+  .menu:hover .menu--separador {
+    display: block;
+  }
+
+  .menu--items {
+    padding-left: 0.8em;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    opacity: 0;
+    transform: translateY(-0.625rem);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .menu:hover .menu--items {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .menu:hover {
+    height: 15.625rem;
+    padding: 0.625rem;
+  }
+
+  /* Portada */
+  .portada--titulo {
+    font-size: 4em;
+  }
+
+  /* Encabezado */
+  .encabezado {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    height: 7em;
+  }
+
+  .encabezado>img {
+    width: 4em;
+  }
+
+  .encabezado--titulo {
+    font-size: 2em;
+  }
+
+  /*Cita*/
+  .seccion2 {
+    padding: 2em 0;
+  }
+
+  .cita--texto {
+    font-size: 2em;
+  }
+
+
+  .footer {
+    margin-top: 2em;
+  }
+
+  .receta-container {
+    width: 90%;
+    /* Ancho para móviles */
+  }
+
+  /*Receta*/
+  .postre {
+    display: grid;
+    grid-template-areas:
+      "encabezado"
+      "ingredientes"
+      "preparacion"
+      "reproductor";
+    grid-template-columns: 1fr;
+    padding: 1.5em;
+  }
+
+  .postre--encabezado {
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "imagen"
+      "informacion";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1.5em;
+  }
+
+  .portada--informacion {
+    grid-area: informacion;
+
+    width: 100%;
+    margin: 0;
+  }
+
+  .postre--imagen {
+    grid-area: imagen;
+    display: block;
+    margin: auto;
+    width: 20em;
+    height: auto;
+    aspect-ratio: 1;
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+
+  #contenedor-envio-recetas {
+    margin: 1.25em auto;
+    width: 95%;
+  }
+
+  .contenedor-envio-recetas--titulo {
+    font-size: 26px;
+  }
+
+  .espera--area--imagen {
+    text-align: center;
+  }
+
+  .espera--area--imagen>img {
+    width: 8em;
+  }
+
+  /* Contacto */
+  .contact-grid {
+    width: 90%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-grid>div {
+    grid-column: 1 / -1;
+    margin-bottom: 1em;
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1em;
+  }
+
+  .newsletter input {
+    width: 90%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+}
+
+
+/******************************/
+/*       18.Media Print       */
+/******************************/
+/* Vertical y con imágenes de fondo activados */
+@media print {
+  @page {
+    margin: 2em;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+  }
+
+  html {
+    background-color: white;
+  }
+
+  section {
+    height: 5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .encabezado {
+    width: 100%;
+    height: 5em;
+  }
+
+  .encabezado img {
+    height: 2em;
+    width: auto;
+  }
+
+  .encabezado--titulo {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+
+  .enlaceInterno {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  .menu {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    gap: 0.5rem;
+  }
+
+
+  .menu--etiqueta {
+    display: block;
+    text-align: center;
+  }
+
+  .menu--logo {
+    width: 2.5rem;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu--items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    opacity: 1;
+    transform: none;
+  }
+
+  .menu--separador {
+    display: none;
+  }
+
+  .menu--item {
+    opacity: 1;
+    transform: none;
+  }
+
+  .portada {
+    background-image: none;
+    position: static;
+    height: 3em;
+    width: 100%;
+    display: block;
+    overflow: visible;
+    z-index: 0;
+    margin-top: 5em;
+  }
+
+  .portada--cuadro {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portada--titulo {
+    font-family: var(--fontPrincipal);
+    color: var(--principal);
+    font-size: 3em;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  .portada--descripcion {
+    font-weight: 420;
+    color: var(--secundario);
+  }
+
+  .portada--flecha {
+    display: none;
+  }
+
+  .cita--contenedor {
+    display: block;
+    justify-content: initial;
+  }
+
+  .seccion2 {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    page-break-inside: avoid;
+  }
+
+  .cita--texto {
+    font-size: 2rem;
+    color: var(--principal);
+  }
+
+  .cita--footer {
+    margin-top: 1rem;
+  }
+
+  .cita--enlace {
+    font-size: 1rem;
+    padding: 0.4rem;
+    border-top: none;
+  }
+
+  .seccion-tarjetas {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    page-break-inside: avoid;
+  }
+
+  .aviso-cookies {
+    display: none;
+
+  }
+
+  .recetario {
+    background-color: white;
+    width: 80%;
+    margin: 5em auto;
+    padding: 2em;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+
+  .invierno {
+    margin: 10em auto;
+    page-break-before: always;
+    page-break-after: always;
+  }
+
+  .receta-container {
+    margin-bottom: 2em;
+    height: 10em;
+    padding-bottom: 2em;
+  }
+
+  .receta--titulo {
+    font-size: 1em;
+    color: var(--tercero);
+  }
+
+  .enlace-contenedor {
+    display: none;
+  }
+
+  .receta--estacion,
+  .receta--estacion--icono,
+  .receta--estacion--icono img,
+  .circulo,
+  .estacion-fija,
+  .derechos-autor,
+  .receta--imagen {
+    display: none;
+  }
+
+  #formulario-compartir {
+    margin-top: 5em;
+  }
+
+  .contenedor-envio-recetas {
+    border: none !important;
+    width: 100%;
+    height: 30em;
+  }
+
+  #boton-envio-receta,
+  .politicas,
+  .contenedor-envio-recetas--subrayado,
+  .contenedor-envio-recetas input[type='submit'],
+  .contenedor-envio-recetas input[type='file'],
+  .contenedor-envio-recetas select,
+  .contenedor-envio-recetas label[for='estacion'] {
+    display: none;
+  }
+
+  #consulta-input {
+    height: 2em;
+  }
+
+  .newsletter {
+    display: block;
+    padding: 10em 0;
+  }
+
+  .postre--imagen {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .postre--informacion {
+    margin-top: 10em;
+  }
+
+  .postre--titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .receta--estacion,
+  .receta--estacion--icono img {
+    display: none;
+  }
+
+  .derechos-autor,
+  .postre--descripcion,
+  .postre--autor,
+  .postre--tiempo-preparacion {
+    margin-bottom: 1rem;
+  }
+
+  .postre--etiquetas {
+    margin-top: 1rem;
+  }
+
+  .postre--etiqueta {
+    display: inline-block;
+  }
+
+  .postre--ingrediente-item,
+  .postre--paso {
+    background-color: white;
+  }
+
+  .postre--preparacion {
+    margin-top: 2rem;
+  }
+
+  .postre--pasos-preparacion {
+    list-style-type: decimal;
+    padding-left: 1rem;
+  }
+
+  .postre--paso {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .track-player {
+    display: none;
+  }
+
+  .footer {
+    page-break-before: always;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: white;
+  }
+
+  .aviso-cookies {
+    display: none;
+  }
+
+}

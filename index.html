@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, content=user-scalable:no">
+  <meta name="author" content="Wara Yasy Pacheco Arandia">
+  <meta name="description" content="Recetario estacional enfocado en alimentos de la temporada">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="imagenes/Casia.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Casia | Inicio</title>
+</head>
+
+<body>
+  <header>
+    <!-- Barra de navegación -->
+    <nav class="menu">
+      <div class="menu--etiqueta">
+        <a href="index.html"><img src="imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
+      </div>
+      <div class="menu--separador"></div>
+      <div class="menu--items">
+        <div class="menu--item"><a href="#estaciones">Estaciones</a></div>
+        <div class="menu--item"><a href="html/recetario.html">Recetario</a></div>
+        <div class="menu--item"><a href="html/formReceta.html">Comparte</a></div>
+        <div class="menu--item"><a href="html/contacto.html">Contacto</a></div>
+      </div>
+    </nav>
+    <!-- Fin barra de navegación -->
+  </header>
+  <main>
+    <section class="portada" id="seccion1">
+      <div class="portada--cuadro">
+        <h1 class="portada--titulo">Recetario</h1>
+        <h1 class="portada--titulo">Estacional</h1>
+        <p class="portada--descripcion">Un viaje de sabores por cada estación del año</p>
+        <a href="#seccion2" class="portada--flecha">
+          <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5L25 25L45 5" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="seccion2" id="seccion2">
+      <div class="cita--contenedor">
+        <blockquote class="cita">
+          <p class="cita--texto">
+            Comer los frutos de la época es saborear la naturaleza en su mejor momento. Cada bocado nos conecta con el
+            ciclo de las estaciones, llenando nuestros platos de frescura, color y aroma.
+          </p>
+          <footer class="cita--footer">
+            <cite><a class="cita--enlace" href="html/recetario.html">Recetario Completo</a></cite>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="seccion-tarjetas" id="estaciones">
+      <div class="seccion-tarjetas--contenedor">
+        <div class="tarjeta tarjetat estaciones--invierno file-card" data-url="./html/recetario.html#invierno">
+          <input type='checkbox' id='modal-invierno'>
+          <div class='circulo'>
+            <a href="html/recetario.html#invierno"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          </div>
+          <h2>Invierno</h2>
+          <div class='tags'>
+            <span class="etiqueta">Granada</span>
+            <span class="etiqueta">Pomelo</span>
+          </div>
+        </div>
+
+        <div class="tarjeta tarjetat estaciones--primavera file-card" data-url="./html/recetario.html#primavera">
+          <input type='checkbox' id='modal-primavera'>
+          <div class='circulo'>
+            <a href="html/recetario.html#primavera"><img src="imagenes/cinnamon-roll-svgrepo-com.svg"
+                alt="Leer más"></a>
+          </div>
+          <h2>Primavera</h2>
+          <div class='tags'>
+            <span class="etiqueta">Fresas</span>
+            <span class="etiqueta">Níspero</span>
+          </div>
+        </div>
+
+        <div class="tarjeta tarjetat estaciones--verano file-card" data-url="./html/espera.html">
+          <input type='checkbox' id='modal-verano'>
+          <div class='circulo'>
+            <a href="html/espera.html"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          </div>
+          <h2>Verano</h2>
+          <div class='tags'>
+            <span class="etiqueta">Cerezas</span>
+            <span class="etiqueta">Durazno</span>
+          </div>
+        </div>
+
+        <div class="tarjeta tarjetat estaciones--otono file-card" data-url="./html/recetario.html#otono">
+          <input type='checkbox' id='modal-otono'>
+          <div class='circulo'>
+            <a href="html/recetario.html#otono"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          </div>
+          <h2>Otoño</h2>
+          <div class='tags'>
+            <span class="etiqueta">Higos</span>
+            <span class="etiqueta">Calabaza</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seccion-tarjetas--festividades file-card" data-url="./html/espera.html">
+        <div class="tarjeta tarjetat festividades">
+          <input type='checkbox' id='modal-festividades'>
+          <div class='circulo'>
+            <a href="html/espera.html"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          </div>
+          <h2>Festividades</h2>
+          <div class='tags'>
+            <span class="etiqueta" title="Vitamina C">Cítricos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="aviso-cookies" class="aviso-cookies">
+      <p><img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Galleta de jengibre"><img src="imagenes/hombre-jengibre-rojo.png" alt="Galleta de jengibre"><img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Galleta de jengibre"></p>
+      <p>Este sitio usa cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
+      <p><button id="aceptar-btn">Aceptar</button>
+      <button id="rechazar-btn">Rechazar</button></p>
+    </div>
+
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer--contenedor">
+      <div class="footer--columna footer--columna--logo">
+        <img src="imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
+        <h2 class="footer--titulo">Recetario Estacional</h2>
+      </div>
+      <div class="footer--columna footer--columna--enlaces">
+        <h3 class="footer--subtitulo">Enlaces Útiles</h3>
+        <ul class="footer--lista-enlaces">
+          <li class="footer--enlace-item"><a class="footer--enlace" href="index.html">Inicio</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace" href="html/recetario.html">Recetario</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace"
+              href="html/Recetas/otono_cupcake_calabaza.html">Nuestra última receta</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace" href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer--columna footer--columna--contacto">
+        <h3 class="footer--subtitulo">Contacto</h3>
+        <p class="footer--correo">Email: <a href="mailto:contacto@casia.com"
+            class="footer--enlace">contacto@casia.com</a></p>
+        <p class="footer--telefono">Teléfono: <a href="tel:+123456789" class="footer--enlace">(+34) 678 765 665</a></p>
+      </div>
+    </div>
+
+    <div class="footer--derechos">
+      <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardin</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
