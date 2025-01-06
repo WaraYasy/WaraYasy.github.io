@@ -152,7 +152,7 @@ LISTA DE CONTENIDOS
   --principal: #6b4226;
   --secundario: #3b2813;
   --tercero: #8c6a4d;
-  --apoyo: #db6d13;
+  --apoyo: #803f0a;
   --resaltar: #f2e7dc;
   --estaciones: #6e1400;
   --fondo-principal: #f4f4f4;
@@ -1089,6 +1089,7 @@ audio {
 .footer--enlace {
   color: var(--apoyo);
   text-decoration: none;
+  font-weight: 450;
   transition: color 0.3s;
 }
 
