@@ -1029,6 +1029,10 @@ audio {
 /******************************/
 /*           12.Footer        */
 /******************************/
+.omitir_footer{
+  display: none;
+}
+
 .footer {
   background-color: var(--fondo-principal);
   color: var(--secundario);

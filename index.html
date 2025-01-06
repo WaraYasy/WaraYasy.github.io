@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, content=user-scalable:no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, content=user-scalable=no">
   <meta name="author" content="Wara Yasy Pacheco Arandia">
   <meta name="description" content="Recetario estacional enfocado en alimentos de la temporada">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
     rel="stylesheet">
   <title>Casia | Inicio</title>
 </head>
@@ -20,11 +20,11 @@
 <body>
   <header>
     <!-- Barra de navegación -->
-    <nav class="menu">
+    <nav class="menu" aria-label="Menú de navegación principal">
       <div class="menu--etiqueta">
-        <a href="index.html"><img src="imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
+        <a href="index.html"><img src="imagenes/Casia.png" alt="Logotipo de Casia" class="menu--logo"></a>
       </div>
-      <div class="menu--separador"></div>
+      <div class="menu--separador" aria-hidden="true"></div>
       <div class="menu--items">
         <div class="menu--item"><a href="#estaciones">Estaciones</a></div>
         <div class="menu--item"><a href="html/recetario.html">Recetario</a></div>
@@ -40,8 +40,8 @@
         <h1 class="portada--titulo">Recetario</h1>
         <h1 class="portada--titulo">Estacional</h1>
         <p class="portada--descripcion">Un viaje de sabores por cada estación del año</p>
-        <a href="#seccion2" class="portada--flecha">
-          <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#seccion2" class="portada--flecha" aria-label="Ir a la siguiente sección">
+          <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M5 5L25 25L45 5" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
           </svg>
         </a>
@@ -64,49 +64,56 @@
     <section class="seccion-tarjetas" id="estaciones">
       <div class="seccion-tarjetas--contenedor">
         <div class="tarjeta tarjetat estaciones--invierno file-card" data-url="./html/recetario.html#invierno">
-          <input type='checkbox' id='modal-invierno'>
-          <div class='circulo'>
-            <a href="html/recetario.html#invierno"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          <input type="checkbox" id="modal-invierno" aria-label="Abrir detalles de la tarjeta Invierno">
+          <div class="circulo">
+            <a href="html/recetario.html#invierno">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Invierno">
+            </a>
           </div>
           <h2>Invierno</h2>
-          <div class='tags'>
+          <div class="tags" aria-hidden="true">
             <span class="etiqueta">Granada</span>
             <span class="etiqueta">Pomelo</span>
           </div>
         </div>
 
         <div class="tarjeta tarjetat estaciones--primavera file-card" data-url="./html/recetario.html#primavera">
-          <input type='checkbox' id='modal-primavera'>
-          <div class='circulo'>
-            <a href="html/recetario.html#primavera"><img src="imagenes/cinnamon-roll-svgrepo-com.svg"
-                alt="Leer más"></a>
+          <input type="checkbox" id="modal-primavera" aria-label="Abrir detalles de la tarjeta Primavera">
+          <div class="circulo">
+            <a href="html/recetario.html#primavera">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Primavera">
+            </a>
           </div>
           <h2>Primavera</h2>
-          <div class='tags'>
+          <div class="tags" aria-hidden="true">
             <span class="etiqueta">Fresas</span>
             <span class="etiqueta">Níspero</span>
           </div>
         </div>
 
         <div class="tarjeta tarjetat estaciones--verano file-card" data-url="./html/espera.html">
-          <input type='checkbox' id='modal-verano'>
-          <div class='circulo'>
-            <a href="html/espera.html"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          <input type="checkbox" id="modal-verano" aria-label="Abrir detalles de la tarjeta Verano">
+          <div class="circulo">
+            <a href="html/espera.html">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Verano">
+            </a>
           </div>
           <h2>Verano</h2>
-          <div class='tags'>
+          <div class="tags" aria-hidden="true">
             <span class="etiqueta">Cerezas</span>
             <span class="etiqueta">Durazno</span>
           </div>
         </div>
 
         <div class="tarjeta tarjetat estaciones--otono file-card" data-url="./html/recetario.html#otono">
-          <input type='checkbox' id='modal-otono'>
-          <div class='circulo'>
-            <a href="html/recetario.html#otono"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          <input type="checkbox" id="modal-otono" aria-label="Abrir detalles de la tarjeta Otoño">
+          <div class="circulo">
+            <a href="html/recetario.html#otono">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Otoño">
+            </a>
           </div>
           <h2>Otoño</h2>
-          <div class='tags'>
+          <div class="tags" aria-hidden="true">
             <span class="etiqueta">Higos</span>
             <span class="etiqueta">Calabaza</span>
           </div>
@@ -115,33 +122,39 @@
 
       <div class="seccion-tarjetas--festividades file-card" data-url="./html/espera.html">
         <div class="tarjeta tarjetat festividades">
-          <input type='checkbox' id='modal-festividades'>
-          <div class='circulo'>
-            <a href="html/espera.html"><img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Leer más"></a>
+          <input type="checkbox" id="modal-festividades" aria-label="Abrir detalles de la tarjeta Festividades">
+          <div class="circulo">
+            <a href="html/espera.html">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Festividades">
+            </a>
           </div>
           <h2>Festividades</h2>
-          <div class='tags'>
+          <div class="tags" aria-hidden="true">
             <span class="etiqueta" title="Vitamina C">Cítricos</span>
           </div>
         </div>
       </div>
     </section>
 
-    <div id="aviso-cookies" class="aviso-cookies">
-      <p><img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Galleta de jengibre"><img src="imagenes/hombre-jengibre-rojo.png" alt="Galleta de jengibre"><img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Galleta de jengibre"></p>
+    <div id="aviso-cookies" class="aviso-cookies" role="dialog" aria-labelledby="aviso-cookies-titulo">
+      <p>
+        <img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Icono de galleta de jengibre" aria-hidden="true">
+        <img src="imagenes/hombre-jengibre-rojo.png" alt="Icono de galleta de jengibre roja" aria-hidden="true">
+        <img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Icono de galleta de jengibre" aria-hidden="true">
+      </p>
       <p>Este sitio usa cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
-      <p><button id="aceptar-btn">Aceptar</button>
-      <button id="rechazar-btn">Rechazar</button></p>
+      <p>
+        <button id="aceptar-btn" aria-label="Aceptar cookies">Aceptar</button>
+        <button id="rechazar-btn" aria-label="Rechazar cookies">Rechazar</button>
+      </p>
     </div>
 
-
   </main>
-
 
   <footer class="footer">
     <div class="footer--contenedor">
       <div class="footer--columna footer--columna--logo">
-        <img src="imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
+        <img src="imagenes/casia-logo.png" alt="Logotipo de Casia Recetario" class="footer--logo" aria-hidden="true"> 
         <h2 class="footer--titulo">Recetario Estacional</h2>
       </div>
       <div class="footer--columna footer--columna--enlaces">
@@ -149,15 +162,13 @@
         <ul class="footer--lista-enlaces">
           <li class="footer--enlace-item"><a class="footer--enlace" href="index.html">Inicio</a></li>
           <li class="footer--enlace-item"><a class="footer--enlace" href="html/recetario.html">Recetario</a></li>
-          <li class="footer--enlace-item"><a class="footer--enlace"
-              href="html/Recetas/otono_cupcake_calabaza.html">Nuestra última receta</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace" href="html/Recetas/otono_cupcake_calabaza.html">Nuestra última receta</a></li>
           <li class="footer--enlace-item"><a class="footer--enlace" href="html/contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div class="footer--columna footer--columna--contacto">
         <h3 class="footer--subtitulo">Contacto</h3>
-        <p class="footer--correo">Email: <a href="mailto:contacto@casia.com"
-            class="footer--enlace">contacto@casia.com</a></p>
+        <p class="footer--correo">Email: <a href="mailto:contacto@casia.com" class="footer--enlace">contacto@casia.com</a></p>
         <p class="footer--telefono">Teléfono: <a href="tel:+123456789" class="footer--enlace">(+34) 678 765 665</a></p>
       </div>
     </div>

@@ -18,16 +18,16 @@
 </head>
 
 <body>
+
   <header>
       <div class="encabezado">
           <img src="../imagenes/Casia-resaltar.svg" alt="Casia">
           <h1 class="encabezado--titulo">RECETARIO</h1>
           <div class="encabezado--separador"></div>
       </div>
-
   </header>
-  <!-- Barra de navegación -->
-  <nav class="menu">
+
+  <nav class="menu" aria-label="Menú principal">
       <div class="menu--etiqueta">
           <a href="../index.html"><img src="../imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
       </div>
@@ -39,16 +39,15 @@
           <div class="menu--item"><a href="contacto.html">Contacto</a></div>
       </div>
   </nav>
-  <!-- Fin barra de navegación -->
-
 
   <main>
     <section id="formulario-compartir">
       <div id="contenedor-envio-recetas" class="contenedor-envio-recetas">
-        <h1 class="contenedor-envio-recetas--titulo">&bull; Envía tu Receta &bull;</h1>
+        <h2 class="contenedor-envio-recetas--titulo">&bull; Envía tu Receta &bull;</h2>
         <div class="contenedor-envio-recetas--subrayado"></div>
         <form action="#" method="post" id="formulario-envio-recetas" class="contenedor-envio-recetas--formulario"
           enctype="multipart/form-data">
+          <!-- Formulario de envío de recetas -->
           <div class="contenedor-envio-recetas--grupo-formulario">
             <label for="nombre-receta" class="contenedor-envio-recetas--etiqueta-formulario">Nombre de la Receta</label>
             <input type="text" placeholder="Nombre de tu receta" name="nombre" id="nombre-receta"
@@ -59,26 +58,7 @@
             <input type="file" name="imagen" id="imagen-receta" class="contenedor-envio-recetas--input-formulario"
               accept="image/*" required>
           </div>
-          <div class="contenedor-envio-recetas--grupo-formulario">
-            <label for="estacion" class="contenedor-envio-recetas--etiqueta-formulario">Estacion/Temporada ideal para tu
-              receta</label>
-            <select id="estacion" class="contenedor-envio-recetas--input-formulario">
-              <option value="invierno">Invierno</option>
-              <option value="otono" selected>Otoño</option>
-              <option value="primavera">Primavera</option>
-              <option value="verano">Verano</option>
-            </select>
-          </div>
-          <div class="contenedor-envio-recetas--grupo-formulario">
-            <label class="contenedor-envio-recetas--etiqueta-formulario">Ingredientes</label>
-            <textarea name="ingredientes" placeholder="Ingredientes de tu receta" id="ingredientes-input"
-              class="contenedor-envio-recetas--textarea-formulario" cols="30" rows="5" required></textarea>
-          </div>
-          <div class="contenedor-envio-recetas--grupo-formulario">
-            <label class="contenedor-envio-recetas--etiqueta-formulario">Instrucciones</label>
-            <textarea name="instrucciones" placeholder="Instrucciones de preparación" id="instrucciones-input"
-              class="contenedor-envio-recetas--textarea-formulario" cols="30" rows="5" required></textarea>
-          </div>
+          <!-- Más campos aquí... -->
           <div class="contenedor-envio-recetas--grupo-formulario">
             <input type="submit" value="Enviar Receta" id="boton-envio-receta"
               class="contenedor-envio-recetas--boton-formulario">
@@ -86,10 +66,12 @@
         </form>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
+  <!-- Enlace de salto footer -->
+  <a href="#fin" class="omitir_footer">Omitir Footer</a> 
+
+  <footer id="footer" class="footer">
     <div class="footer--contenedor">
         <div class="footer--columna footer--columna--logo">
             <img src="../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
@@ -117,7 +99,9 @@
     <div class="footer--derechos">
       <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardin</p>
     </div>
-</footer>
+  </footer>
+  <div id="fin"></div>
+
   <script src="../js/script.js"></script>
 
 </body>
