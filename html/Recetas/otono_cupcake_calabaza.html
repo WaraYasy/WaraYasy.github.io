@@ -20,44 +20,45 @@
 <body>
     <header>
         <div class="encabezado">
-            <img src="../../imagenes/Casia-resaltar.svg" alt="Casia">
-            <h1 class="encabezado--titulo">Cupcake de Otoño</h1>
+            <img src="../../imagenes/Casia-resaltar.svg" alt="Logo de Casia con diseño estilizado" title="Logo Casia" role="img" aria-label="Logo de Casia con diseño estilizado">
+            <h1 class="encabezado--titulo" id="titulo-cupcake">Cupcake de Otoño</h1>
             <div class="encabezado--separador"></div>
         </div>
     </header>
+
     <!-- Barra de navegación -->
-    <nav class="menu">
+    <nav class="menu" role="navigation" aria-label="Menú de navegación principal">
         <div class="menu--etiqueta">
-            <a href="../../index.html"><img src="../../imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
+            <a href="../../index.html" aria-label="Volver a la página de inicio">
+                <img src="../../imagenes/Casia.png" alt="Logo de Casia" class="menu--logo" title="Logo Casia">
+            </a>
         </div>
         <div class="menu--separador"></div>
         <div class="menu--items">
-            <div class="menu--item">
-                <a href="../../index.html#estaciones">Estaciones</a>
-            </div>
-            <div class="menu--item"><a href="../recetario.html">Recetario</a></div>
-            <div class="menu--item"><a href="../formReceta.html">Comparte</a></div>
-            <div class="menu--item"><a href="../contacto.html">Contacto</a></div>
+            <div class="menu--item"><a href="../../index.html#estaciones" aria-label="Ir a las estaciones del año">Estaciones</a></div>
+            <div class="menu--item"><a href="../recetario.html" aria-label="Ir al recetario">Recetario</a></div>
+            <div class="menu--item"><a href="../formReceta.html" aria-label="Ir a la sección de compartir receta">Comparte</a></div>
+            <div class="menu--item"><a href="../contacto.html" aria-label="Ir a la sección de contacto">Contacto</a></div>
         </div>
     </nav>
     <!-- Fin barra de navegación -->
 
     <main>
-        <section class="postre">
+        <section class="postre" aria-labelledby="titulo-cupcake">
             <div class="postre--encabezado">
-                <img class="postre--imagen" src="../../imagenes/cupvake_calabaza_ot.jpg" alt="Cupcake"><br>
+                <img class="postre--imagen" src="../../imagenes/cupvake_calabaza_ot.jpg"
+                    alt="Cupcake decorado con trozos de calabaza y frutos secos"
+                    title="Cupcake de Calabaza con especias y frutos secos" role="img" aria-label="Cupcake decorado con trozos de calabaza y frutos secos">
                 <div class="postre--informacion">
-                    <h1 class="postre--titulo">Cupcake de calabaza con especias y frutos secos
-                    </h1>
-                    <div class="receta--estacion">
+                    <h1 class="postre--titulo" id="titulo-receta">Cupcake de calabaza con especias y frutos secos</h1>
+                    <div class="receta--estacion" aria-labelledby="titulo-receta">
                         <div class="receta--estacion--icono">
-                            <img src="../../imagenes/hojas-de-otono.png" title="Receta Otoño">
+                            <img src="../../imagenes/hojas-de-otono.png" title="Receta Otoño" alt="Icono de hojas de otoño" role="img" aria-label="Icono de hojas de otoño, símbolo de la estación">
                         </div>
                     </div>
                     <p class="derechos-autor">Foto de Vojtech Okenka</p>
                     <p class="postre--descripcion">
-                        Una masa esponsoja y delicada, con el magnífico sabor de las
-                        especias de temporada
+                        Una masa esponjosa y delicada, con el magnífico sabor de las especias de temporada.
                     </p>
                     <p class="postre--autor">Por: Ruth Cano</p>
                     <p class="postre--tiempo-preparacion">
@@ -94,8 +95,7 @@
                         En un tazón, mezclar las frutas con el azúcar.
                     </li>
                     <li class="postre--paso">
-                        Verter las frutas sobre la base de la tarta y cubrir con crema
-                        batida.
+                        Verter las frutas sobre la base de la tarta y cubrir con crema batida.
                     </li>
                     <li class="postre--paso">
                         Refrigerar por al menos 30 minutos antes de servir.
@@ -103,9 +103,9 @@
                 </ol>
             </div>
 
-            <div class="track-player">
+            <div class="track-player" aria-labelledby="titulo-musica">
                 <div class="track-texto">
-                    <h1 class="track-title">Escucha mientras cocinas</h1>
+                    <h1 class="track-title" id="titulo-musica">Escucha mientras cocinas</h1>
                     <div class="track-info">
                         <p class="track-title-song">You Can't Always Get What You Want</p>
                         <p class="track-artist">The Rolling Stones</p>
@@ -121,26 +121,27 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-labelledby="footer-titulo">
+        <a href="#fin" class="omitir_footer" aria-label="Omitir Footer">Omitir Footer</a>
         <div class="footer--contenedor">
             <div class="footer--columna footer--columna--logo">
-                <img src="../../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
-                <h2 class="footer--titulo">Recetario Estacional</h2>
+                <img src="../../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo" title="Logo de Casia" role="img" aria-label="Logo de Casia">
+                <h2 class="footer--titulo" id="footer-titulo">Recetario Estacional</h2>
             </div>
             <div class="footer--columna footer--columna--enlaces">
                 <h3 class="footer--subtitulo">Enlaces Útiles</h3>
                 <ul class="footer--lista-enlaces">
                     <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="../../index.html">Inicio</a>
+                        <a class="footer--enlace" href="../../index.html" aria-label="Ir al inicio">Inicio</a>
                     </li>
                     <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="../recetario.html">Recetario</a>
+                        <a class="footer--enlace" href="../recetario.html" aria-label="Ver el recetario">Recetario</a>
                     </li>
                     <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="otono_cupcake_calabaza.html">Nuestra última receta</a>
+                        <a class="footer--enlace" href="otono_cupcake_calabaza.html" aria-label="Ver nuestra última receta">Nuestra última receta</a>
                     </li>
                     <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="../contacto.html">Contacto</a>
+                        <a class="footer--enlace" href="../contacto.html" aria-label="Ir a la sección de contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -148,11 +149,11 @@
                 <h3 class="footer--subtitulo">Contacto</h3>
                 <p class="footer--correo">
                     Email:
-                    <a href="mailto:contacto@casia.com" class="footer--enlace">contacto@casia.com</a>
+                    <a href="mailto:contacto@casia.com" class="footer--enlace" aria-label="Enviar un correo a contacto@casia.com">contacto@casia.com</a>
                 </p>
                 <p class="footer--telefono">
                     Teléfono:
-                    <a href="tel:+123456789" class="footer--enlace">(+34) 678 765 665</a>
+                    <a href="tel:+123456789" class="footer--enlace" aria-label="Llamar al teléfono (+34) 678 765 665">(+34) 678 765 665</a>
                 </p>
             </div>
         </div>
@@ -160,6 +161,7 @@
         <div class="footer--derechos">
             <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardin</p>
         </div>
+        <div id="fin"></div>
     </footer>
     <script src="../../js/script.js"></script>
 </body>

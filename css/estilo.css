@@ -151,8 +151,9 @@ LISTA DE CONTENIDOS
 :root {
   --principal: #6b4226;
   --secundario: #3b2813;
-  --tercero: #8c6a4d;
-  --apoyo: #803f0a;
+  --tercero: #ab4d00;
+  --sombra-principal: #8c6a4d;
+  --apoyo:  #8c4f0d;
   --resaltar: #f2e7dc;
   --estaciones: #6e1400;
   --fondo-principal: #f4f4f4;
@@ -418,7 +419,7 @@ body {
   color: var(--principal);
   font-size: 6em;
   text-shadow: 0.05em 0.05em 0.1em var(--sombra),
-    -0.05em -0.05em 0.05em var(--tercero);
+    -0.05em -0.05em 0.05em var(--sombra-principal);
   letter-spacing: 0.02em;
   margin: 0;
 }
@@ -763,7 +764,7 @@ input[id^="modal"] {
 }
 
 .receta--titulo>header {
-  text-shadow: var(--sombra-texto);
+  color: var(--tercero);
   font-family: var(--fontPrincipal);
 }
 
@@ -775,10 +776,9 @@ input[id^="modal"] {
   margin-top: 1.5rem;
 }
 
-.receta--detalles--lista h3 {
-  font-weight: 400;
-  font-size: 1.2em;
-  font-weight: 500;
+.receta--detalles--lista .detalle {
+  font-size: 1.5em;
+  font-weight: 600;
   color: var(--apoyo);
   margin: 0;
 }
@@ -1088,8 +1088,8 @@ audio {
 
 .footer--enlace {
   color: var(--apoyo);
+  font-weight: 500;
   text-decoration: none;
-  font-weight: 450;
   transition: color 0.3s;
 }
 
@@ -1099,7 +1099,8 @@ audio {
 
 .footer--derechos {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--tercero);
   margin-top: 1.25rem;
 }
@@ -1310,6 +1311,9 @@ textarea {
   vertical-align: middle;
 }
 
+#contacto-info-titulo{
+  display: none;
+}
 /******************************/
 /*        15.Espera           */
 /******************************/
@@ -1358,6 +1362,7 @@ textarea {
 .espera-contenedor {
   margin-top: 1em;
   width: 100%;
+  height: 95vh;
   background-image: url(../imagenes/fondo-espera.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1370,7 +1375,7 @@ textarea {
   margin: auto;
 }
 
-.espera--area--texto h2 {
+.espera--area--texto h1 {
   color: var(--apoyo);
   font-family: var(--fontPrincipal);
   font-size: 3em;

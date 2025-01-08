@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Wara Yasy Pacheco Arandia">
   <meta name="description" content="Recetario estacional enfocado en alimentos de la temporada">
+  <meta name="keywords" content="recetario, recetas estacionales, comida, temporada, otoño, invierno, primavera, verano">
+  <meta name="robots" content="index, follow">
   <link rel="icon" href="../imagenes/Casia.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/estilo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +18,6 @@
 </head>
 
 <body>
-  <!-- Enlace para saltar al contenido -->
-  <a href="#footer" class="skip-link">Ir al pie de página</a>
 
   <header>
     <div class="encabezado-espera">
@@ -29,16 +29,24 @@
   <!-- Barra de navegación -->
   <nav class="menu">
     <div class="menu--etiqueta">
-      <a href="../index.html"><img src="../imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
+      <a href="../index.html" aria-label="Ir al inicio">
+        <img src="../imagenes/Casia.png" alt="Logo de Casia" class="menu--logo">
+      </a>
     </div>
     <div class="menu--separador"></div>
     <div class="menu--items">
       <div class="menu--item">
-        <a href="../index.html#estaciones">Estaciones</a>
+        <a href="../index.html#estaciones" aria-label="Ir a la sección de estaciones">Estaciones</a>
       </div>
-      <div class="menu--item"><a href="recetario.html">Recetario</a></div>
-      <div class="menu--item"><a href="formReceta.html">Comparte</a></div>
-      <div class="menu--item"><a href="contacto.html">Contacto</a></div>
+      <div class="menu--item">
+        <a href="recetario.html" aria-label="Ir al recetario">Recetario</a>
+      </div>
+      <div class="menu--item">
+        <a href="formReceta.html" aria-label="Comparte tu receta">Comparte</a>
+      </div>
+      <div class="menu--item">
+        <a href="contacto.html" aria-label="Ir a la página de contacto">Contacto</a>
+      </div>
     </div>
   </nav>
   <!-- Fin barra de navegación -->
@@ -46,17 +54,17 @@
   <main>
     <section class="espera-contenedor">
       <div class="espera--area--texto">
-        <h2>Preparando tus recetas</h2>
+        <h1>Preparando tus recetas</h1>
         <p>
           El equipo Casia está emplatando los últimos detalles, muy pronto
           tendrás disponibles todas nuestras recetas.
         </p>
         <p>
           Empieza con algo ligero, te dejamos nuestra propia receta de
-          <a href="Recetas/otono-cupcake-calabaza.html">Cupcakes de Calabaza</a>.
+          <a href="Recetas/otono_cupcake_calabaza.html" aria-label="Ver receta de cupcakes de calabaza">Cupcakes de Calabaza</a>.
         </p>
         <p class="espera--area--enlace-contenedor">
-          <a href="../index.html" class="espera--area--enlaceInterno">Volver al Inicio</a>
+          <a href="../index.html" class="espera--area--enlaceInterno" aria-label="Volver al inicio">Volver al Inicio</a>
         </p>
       </div>
       <div class="espera--area--imagen">
@@ -75,16 +83,16 @@
         <h3 class="footer--subtitulo">Enlaces Útiles</h3>
         <ul class="footer--lista-enlaces">
           <li class="footer--enlace-item">
-            <a class="footer--enlace" href="../index.html">Inicio</a>
+            <a class="footer--enlace" href="../index.html" aria-label="Volver al inicio">Inicio</a>
           </li>
           <li class="footer--enlace-item">
-            <a class="footer--enlace" href="recetario.html">Recetario</a>
+            <a class="footer--enlace" href="recetario.html" aria-label="Ir al recetario">Recetario</a>
           </li>
           <li class="footer--enlace-item">
-            <a class="footer--enlace" href="Recetas/otono-cupcake-calabaza.html">Nuestra última receta</a>
+            <a class="footer--enlace" href="Recetas\otono_cupcake_calabaza.html" aria-label="Ver receta de cupcakes de calabaza">Nuestra última receta</a>
           </li>
           <li class="footer--enlace-item">
-            <a class="footer--enlace" href="contacto.html">Contacto</a>
+            <a class="footer--enlace" href="contacto.html" aria-label="Ir a la página de contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -92,11 +100,11 @@
         <h3 class="footer--subtitulo">Contacto</h3>
         <p class="footer--correo">
           Email:
-          <a href="mailto:contacto@casia.com" class="footer--enlace">contacto@casia.com</a>
+          <a href="mailto:contacto@casia.com" class="footer--enlace" aria-label="Enviar un correo a contacto@casia.com">contacto@casia.com</a>
         </p>
         <p class="footer--telefono">
           Teléfono:
-          <a href="tel:+123456789" class="footer--enlace">(+34) 678 765 665</a>
+          <a href="tel:+123456789" class="footer--enlace" aria-label="Llamar a (+34) 678 765 665">(+34) 678 765 665</a>
         </p>
       </div>
     </div>

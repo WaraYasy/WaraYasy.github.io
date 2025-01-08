@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Casia | Recetario</title>
 </head>
@@ -20,17 +20,17 @@
 <body>
     <header>
         <div class="encabezado">
-            <img src="../imagenes/Casia-resaltar.svg" alt="Logotipo de Casia">
+            <img src="../imagenes/Casia-resaltar.svg" alt="Logo de Casia, imagen destacada"
+                aria-label="Logo de Casia, imagen destacada">
             <h1 class="encabezado--titulo">RECETARIO</h1>
             <div class="encabezado--separador"></div>
         </div>
     </header>
-    
-    <nav class="menu" role="navigation" aria-label="Menú principal">
+
+    <!-- Barra de navegación -->
+    <nav class="menu">
         <div class="menu--etiqueta">
-            <a href="../index.html">
-                <img src="../imagenes/Casia.png" alt="Inicio de Casia" class="menu--logo">
-            </a>
+            <a href="../index.html"><img src="../imagenes/Casia.png" alt="Logo de Casia" class="menu--logo"></a>
         </div>
         <div class="menu--separador"></div>
         <div class="menu--items">
@@ -42,14 +42,16 @@
     </nav>
 
     <main>
-        <section class="recetario primavera" id="primavera" aria-labelledby="primavera-titulo">
-            <h2 id="primavera-titulo" class="estacion-fija">Primavera</h2>
-
+        <!-- Sección Primavera -->
+        <section class="recetario primavera" id="primavera">
+            <h2 class="estacion-fija">Primavera</h2>
+            <!-- Receta 1 -->
             <div class="receta-container">
                 <div class="receta">
                     <div class="receta--estacion">
                         <div class="receta--estacion--icono">
-                            <img src="../imagenes/arcoiris.png" alt="Ícono de receta primavera" title="Receta Primavera">
+                            <img src="../imagenes/arcoiris.png" alt="Icono de arco iris, símbolo de primavera"
+                                title="Receta Primavera">
                         </div>
                     </div>
                     <div class="receta--titulo">
@@ -57,94 +59,239 @@
                     </div>
                     <div class="receta--detalles">
                         <div class="receta--detalles--lista">
-                            <h3>Nivel</h3>
+                            <p class="detalle">Nivel</p>
                             <p>Principiante</p>
                         </div>
                         <div class="receta--detalles--lista">
-                            <h3>Tiempo</h3>
+                            <p class="detalle">Tiempo</p>
                             <p>15 minutos</p>
                         </div>
                     </div>
                     <a href="espera.html">
-                        <img src="../imagenes/ensalada_queso_pri.jpg" alt="Ensalada de espárragos, fresas y queso de cabra" 
-                            title="Clic para ver la receta" class="receta--imagen">
+                        <img src="../imagenes/ensalada_queso_pri.jpg"
+                            alt="Ensalada con espárragos, fresas y queso de cabra" title="Clic para ver la receta"
+                            class="receta--imagen">
                     </a>
                     <p class="derechos-autor">Foto: Lisa Fotios</p>
                 </div>
             </div>
 
+            <!-- Receta 2 -->
             <div class="receta-container">
                 <div class="receta">
                     <div class="receta--estacion">
                         <div class="receta--estacion--icono">
-                            <img src="../imagenes/arcoiris.png" alt="Ícono de receta primavera" title="Receta Primavera">
+                            <img src="../imagenes/arcoiris.png" alt="Icono de arco iris, símbolo de primavera"
+                                title="Receta Primavera">
                         </div>
                     </div>
                     <div class="receta--titulo">
-                        <header>Tarta de<br> Frutos Rojos</header>
+                        <header>Tarta de <br> Frutos Rojos</header>
                     </div>
                     <div class="receta--detalles">
                         <div class="receta--detalles--lista">
-                            <h3>Nivel</h3>
+                            <p class="detalle">Nivel</p>
                             <p>Medio</p>
                         </div>
                         <div class="receta--detalles--lista">
-                            <h3>Tiempo</h3>
+                            <p class="detalle">Tiempo</p>
                             <p>45 minutos</p>
                         </div>
                     </div>
                     <a href="espera.html">
-                        <img src="../imagenes/Tarta_frutos_pri.jpg" alt="Tarta de frutos rojos" class="receta--imagen" title="Clic para ver la receta">
+                        <img src="../imagenes/Tarta_frutos_pri.jpg" alt="Tarta con frutos rojos frescos"
+                            class="receta--imagen" title="Clic para ver la receta">
                     </a>
                     <p class="derechos-autor">Foto: Anna Tukhfatullina</p>
                 </div>
             </div>
 
-            <!-- Más recetas similares adaptadas -->
+            <!-- Receta 3 -->
+            <div class="receta-container">
+                <div class="receta">
+                    <div class="receta--estacion">
+                        <div class="receta--estacion--icono">
+                            <img src="../imagenes/arcoiris.png" alt="Icono de arco iris, símbolo de primavera"
+                                title="Receta Primavera">
+                        </div>
+                    </div>
+                    <div class="receta--titulo">
+                        <header>Cordero asado <br> Con hierbas y limón</header>
+                    </div>
+                    <div class="receta--detalles">
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Nivel</p>
+                            <p>Medio</p>
+                        </div>
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Tiempo</p>
+                            <p>45 minutos</p>
+                        </div>
+                    </div>
+                    <a href="espera.html">
+                        <img src="../imagenes/cordero_prim.jpg" alt="Cordero asado con hierbas y limón"
+                            class="receta--imagen" title="Clic para ver la receta">
+                    </a>
+                    <p class="derechos-autor">Foto: Chevanon Pexels</p>
+                </div>
+            </div>
+
+            <!-- Receta 4 -->
+            <div class="receta-container">
+                <div class="receta">
+                    <div class="receta--estacion">
+                        <div class="receta--estacion--icono">
+                            <img src="../imagenes/arcoiris.png" alt="Icono de arco iris, símbolo de primavera"
+                                title="Receta Primavera">
+                        </div>
+                    </div>
+                    <div class="receta--titulo">
+                        <header>Smothie de fresas <br> y yogur</header>
+                    </div>
+                    <div class="receta--detalles">
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Nivel</p>
+                            <p>Principiante</p>
+                        </div>
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Tiempo</p>
+                            <p>35 minutos</p>
+                        </div>
+                    </div>
+                    <a href="espera.html">
+                        <img src="../imagenes/smothie_pri.jpg" alt="Smothie de fresas y yogur" class="receta--imagen"
+                            title="Clic para ver la receta">
+                    </a>
+                    <p class="derechos-autor">Foto: Pixabay</p>
+                </div>
+            </div>
         </section>
 
-        <p class="enlace-contenedor">
-            <a href="#primavera" class="enlaceInterno" aria-label="Volver arriba">Volver Arriba</a>
-        </p>
+        <!-- Sección Otoño -->
+        <section class="recetario otoño" id="otono">
+            <h2 class="estacion-fija">Otoño</h2>
+            <!-- Receta 1 -->
+            <div class="receta-container">
+                <div class="receta">
+                    <div class="receta--estacion">
+                        <div class="receta--estacion--icono">
+                            <img src="../imagenes/hojas.png" alt="Icono de hojas, símbolo de otoño"
+                                title="Receta Otoño">
+                        </div>
+                    </div>
+                    <div class="receta--titulo">
+                        <header>Crema de calabaza <br> y nuez</header>
+                    </div>
+                    <div class="receta--detalles">
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Nivel</p>
+                            <p>Medio</p>
+                        </div>
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Tiempo</p>
+                            <p>30 minutos</p>
+                        </div>
+                    </div>
+                    <a href="espera.html">
+                        <img src="../imagenes/crema_calabaza_otono.jpg" alt="Crema de calabaza decorada con nueces"
+                            class="receta--imagen" title="Clic para ver la receta">
+                    </a>
+                    <p class="derechos-autor">Foto: Roxanne Desgagné</p>
+                </div>
+            </div>
+
+            <!-- Receta 2 -->
+            <div class="receta-container">
+                <div class="receta">
+                    <div class="receta--estacion">
+                        <div class="receta--estacion--icono">
+                            <img src="../imagenes/hojas.png" alt="Icono de hojas, símbolo de otoño"
+                                title="Receta Otoño">
+                        </div>
+                    </div>
+                    <div class="receta--titulo">
+                        <header>Risotto de <br> setas y vino tinto</header>
+                    </div>
+                    <div class="receta--detalles">
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Nivel</p>
+                            <p>Medio</p>
+                        </div>
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Tiempo</p>
+                            <p>40 minutos</p>
+                        </div>
+                    </div>
+                    <a href="espera.html">
+                        <img src="../imagenes/risotto_setas_otono.jpg" alt="Risotto con setas y vino tinto"
+                            class="receta--imagen" title="Clic para ver la receta">
+                    </a>
+                    <p class="derechos-autor">Foto: Evan Dvorkin</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Invierno -->
+        <section class="recetario invierno" id="invierno">
+            <h2 class="estacion-fija">Invierno</h2>
+            <!-- Receta 1 -->
+            <div class="receta-container">
+                <div class="receta">
+                    <div class="receta--estacion">
+                        <div class="receta--estacion--icono">
+                            <img src="../imagenes/nieve.png" alt="Icono de nieve, símbolo de invierno"
+                                title="Receta Invierno">
+                        </div>
+                    </div>
+                    <div class="receta--titulo">
+                        <header>Sopa de cebolla <br> gratinada</header>
+                    </div>
+                    <div class="receta--detalles">
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Nivel</p>
+                            <p>Medio</p>
+                        </div>
+                        <div class="receta--detalles--lista">
+                            <p class="detalle">Tiempo</p>
+                            <p>50 minutos</p>
+                        </div>
+                    </div>
+                    <a href="espera.html">
+                        <img src="../imagenes/sopa_cebola_invierno.jpg" alt="Sopa de cebolla gratinada"
+                            class="receta--imagen" title="Clic para ver la receta">
+                    </a>
+                    <p class="derechos-autor">Foto: Patrick Fore</p>
+                </div>
+            </div>
+        </section>
+
+        <p class="enlace-contenedor"><a href="#primavera" class="enlaceInterno">Volver Arriba</a></p>
     </main>
-<!-- Enlace de salto footer -->
-<a href="#fin" class="omitir_footer">Omitir Footer</a> 
-    <footer class="footer" role="contentinfo">
+
+    <footer class="footer">
+        <a href="#fin" class="omitir_footer">Omitir Footer</a>
         <div class="footer--contenedor">
             <div class="footer--columna footer--columna--logo">
-                <img src="../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
+                <img src="../imagenes/casia-logo.png" alt="Logo del Recetario Casia" class="footer--logo">
                 <h2 class="footer--titulo">Recetario Estacional</h2>
             </div>
-            <div class="footer--columna footer--columna--enlaces">
-                <h3 class="footer--subtitulo">Enlaces Útiles</h3>
-                <ul class="footer--lista-enlaces">
-                    <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="recetario.html">Recetario</a>
-                    </li>
-                    <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="Recetas/otono_cupcake_calabaza.html">Nuestra última receta</a>
-                    </li>
-                    <li class="footer--enlace-item">
-                        <a class="footer--enlace" href="contacto.html">Contacto</a>
-                    </li>
+            <div class="footer--columna">
+                <h3>Recetas</h3>
+                <ul>
+                    <li><a href="recetario.html#primavera">Primavera</a></li>
+                    <li><a href="recetario.html#otono">Otoño</a></li>
+                    <li><a href="recetario.html#invierno">Invierno</a></li>
                 </ul>
             </div>
-            <div class="footer--columna footer--columna--contacto">
-                <h3 class="footer--subtitulo">Contacto</h3>
-                <p class="footer--correo">Email: <a href="mailto:contacto@casia.com" class="footer--enlace">contacto@casia.com</a></p>
-                <p class="footer--telefono">Teléfono: <a href="tel:+123456789" class="footer--enlace">(+34) 678 765 665</a></p>
+            <div class="footer--columna">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="formReceta.html">Comparte tu receta</a></li>
+                </ul>
             </div>
         </div>
-
-        <div class="footer--derechos">
-            <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardin</p>
-        </div>
     </footer>
-    <div id="fin"></div>
-    <script src="../js/script.js"></script>
 </body>
 
 </html>

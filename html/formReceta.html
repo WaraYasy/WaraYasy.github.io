@@ -18,90 +18,118 @@
 </head>
 
 <body>
-
   <header>
-      <div class="encabezado">
-          <img src="../imagenes/Casia-resaltar.svg" alt="Casia">
-          <h1 class="encabezado--titulo">RECETARIO</h1>
-          <div class="encabezado--separador"></div>
-      </div>
+    <div class="encabezado">
+      <img src="../imagenes/Casia-resaltar.svg" alt="Logo de Casia - Recetario Estacional" title="Logo de Casia, Recetario Estacional" role="img" aria-label="Logo de Casia">
+      <h1 class="encabezado--titulo">RECETARIO</h1>
+      <div class="encabezado--separador"></div>
+    </div>
   </header>
 
-  <nav class="menu" aria-label="Menú principal">
-      <div class="menu--etiqueta">
-          <a href="../index.html"><img src="../imagenes/Casia.png" alt="Casia" class="menu--logo"></a>
+  <!-- Barra de navegación -->
+  <nav class="menu" role="navigation" aria-label="Menú principal">
+    <div class="menu--etiqueta">
+      <a href="../index.html" title="Ir a la página principal de Casia" aria-label="Ir al inicio">
+        <img src="../imagenes/Casia.png" alt="Casia" class="menu--logo" aria-hidden="true">
+      </a>
+    </div>
+    <div class="menu--separador"></div>
+    <div class="menu--items">
+      <div class="menu--item">
+        <a href="../index.html#estaciones" title="Ver las estaciones del año" aria-label="Ir a las estaciones del año">Estaciones</a>
       </div>
-      <div class="menu--separador"></div>
-      <div class="menu--items">
-          <div class="menu--item"><a href="../index.html#estaciones">Estaciones</a></div>
-          <div class="menu--item"><a href="recetario.html">Recetario</a></div>
-          <div class="menu--item"><a href="formReceta.html">Comparte</a></div>
-          <div class="menu--item"><a href="contacto.html">Contacto</a></div>
+      <div class="menu--item">
+        <a href="recetario.html" title="Explora el recetario de Casia" aria-label="Ir al recetario">Recetario</a>
       </div>
+      <div class="menu--item">
+        <a href="formReceta.html" title="Comparte tu receta con Casia" aria-label="Comparte tu receta">Comparte</a>
+      </div>
+      <div class="menu--item">
+        <a href="contacto.html" title="Contáctanos para más información" aria-label="Ir al formulario de contacto">Contacto</a>
+      </div>
+    </div>
   </nav>
+  <!-- Fin barra de navegación -->
 
   <main>
-    <section id="formulario-compartir">
+    <section id="formulario-compartir" aria-labelledby="formulario-titulo" >
       <div id="contenedor-envio-recetas" class="contenedor-envio-recetas">
-        <h2 class="contenedor-envio-recetas--titulo">&bull; Envía tu Receta &bull;</h2>
+        <h1 id="formulario-titulo" class="contenedor-envio-recetas--titulo">&bull; Envía tu Receta &bull;</h1>
         <div class="contenedor-envio-recetas--subrayado"></div>
         <form action="#" method="post" id="formulario-envio-recetas" class="contenedor-envio-recetas--formulario"
           enctype="multipart/form-data">
-          <!-- Formulario de envío de recetas -->
+          
           <div class="contenedor-envio-recetas--grupo-formulario">
             <label for="nombre-receta" class="contenedor-envio-recetas--etiqueta-formulario">Nombre de la Receta</label>
             <input type="text" placeholder="Nombre de tu receta" name="nombre" id="nombre-receta"
-              class="contenedor-envio-recetas--input-formulario" required>
+              class="contenedor-envio-recetas--input-formulario" aria-required="true" required>
           </div>
+
           <div class="contenedor-envio-recetas--grupo-formulario">
             <label for="imagen-receta" class="contenedor-envio-recetas--etiqueta-formulario">Imagen de la Receta</label>
             <input type="file" name="imagen" id="imagen-receta" class="contenedor-envio-recetas--input-formulario"
-              accept="image/*" required>
+              accept="image/*" aria-required="true" required>
           </div>
-          <!-- Más campos aquí... -->
+
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <label for="estacion" class="contenedor-envio-recetas--etiqueta-formulario">Estación/Temporada ideal para tu receta</label>
+            <select id="estacion" class="contenedor-envio-recetas--input-formulario" aria-required="true">
+              <option value="invierno">Invierno</option>
+              <option value="otono" selected>Otoño</option>
+              <option value="primavera">Primavera</option>
+              <option value="verano">Verano</option>
+            </select>
+          </div>
+
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <label class="contenedor-envio-recetas--etiqueta-formulario">Ingredientes</label>
+            <textarea name="ingredientes" placeholder="Ingredientes de tu receta" id="ingredientes-input"
+              class="contenedor-envio-recetas--textarea-formulario" cols="30" rows="5" aria-required="true" required></textarea>
+          </div>
+
+          <div class="contenedor-envio-recetas--grupo-formulario">
+            <label class="contenedor-envio-recetas--etiqueta-formulario">Instrucciones</label>
+            <textarea name="instrucciones" placeholder="Instrucciones de preparación" id="instrucciones-input"
+              class="contenedor-envio-recetas--textarea-formulario" cols="30" rows="5" aria-required="true" required></textarea>
+          </div>
+
           <div class="contenedor-envio-recetas--grupo-formulario">
             <input type="submit" value="Enviar Receta" id="boton-envio-receta"
-              class="contenedor-envio-recetas--boton-formulario">
+              class="contenedor-envio-recetas--boton-formulario" aria-label="Enviar receta">
           </div>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- Enlace de salto footer -->
-  <a href="#fin" class="omitir_footer">Omitir Footer</a> 
-
-  <footer id="footer" class="footer">
+  <footer class="footer" aria-labelledby="footer-titulo">
+    <a href="#fin" class="omitir_footer">Omitir Footer</a>
     <div class="footer--contenedor">
-        <div class="footer--columna footer--columna--logo">
-            <img src="../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
-            <h2 class="footer--titulo">Recetario Estacional</h2>
-        </div>
-        <div class="footer--columna footer--columna--enlaces">
-            <h3 class="footer--subtitulo">Enlaces Útiles</h3>
-            <ul class="footer--lista-enlaces">
-                <li class="footer--enlace-item"><a class="footer--enlace" href="../index.html">Inicio</a></li>
-                <li class="footer--enlace-item"><a class="footer--enlace" href="recetario.html">Recetario</a></li>
-                <li class="footer--enlace-item"><a class="footer--enlace"
-                        href="Recetas/otono_cupcake_calabaza.html">Nuestra última receta</a></li>
-                <li class="footer--enlace-item"><a class="footer--enlace" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="footer--columna footer--columna--contacto">
-            <h3 class="footer--subtitulo">Contacto</h3>
-            <p class="footer--correo">Email: <a href="mailto:contacto@casia.com"
-                    class="footer--enlace">contacto@casia.com</a></p>
-            <p class="footer--telefono">Teléfono: <a href="tel:+123456789" class="footer--enlace">(+34) 678 765
-                    665</a></p>
-        </div>
+      <div class="footer--columna footer--columna--logo">
+        <img src="../imagenes/casia-logo.png" alt="Logo de Casia Recetario Estacional" class="footer--logo" aria-hidden="true">
+        <h2 class="footer--titulo" id="footer-titulo">Recetario Estacional</h2>
+      </div>
+      <div class="footer--columna footer--columna--enlaces">
+        <h3 class="footer--subtitulo">Enlaces Útiles</h3>
+        <ul class="footer--lista-enlaces">
+          <li class="footer--enlace-item"><a class="footer--enlace" href="../index.html" title="Volver al inicio" aria-label="Ir al inicio">Inicio</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace" href="recetario.html" title="Ver el recetario completo" aria-label="Ir al recetario">Recetario</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace" href="Recetas/otono_cupcake_calabaza.html" title="Ver nuestra receta de otoño más reciente" aria-label="Ver receta de otoño">Nuestra última receta</a></li>
+          <li class="footer--enlace-item"><a class="footer--enlace" href="contacto.html" title="Contacto con el equipo de Casia" aria-label="Ir al formulario de contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer--columna footer--columna--contacto">
+        <h3 class="footer--subtitulo">Contacto</h3>
+        <p class="footer--correo">Email: <a href="mailto:contacto@casia.com" class="footer--enlace" aria-label="Enviar un correo electrónico a contacto@casia.com">contacto@casia.com</a></p>
+        <p class="footer--telefono">Teléfono: <a href="tel:+123456789" class="footer--enlace" aria-label="Llamar al (+34) 678 765 665">(+34) 678 765 665</a></p>
+      </div>
     </div>
 
     <div class="footer--derechos">
-      <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardin</p>
+      <p>&copy; 2024 Casia Recetario Estacional. Todos los derechos reservados. Wara Pacheco Arandia, Ciudad Jardín</p>
     </div>
+    <div id="fin"></div>
   </footer>
-  <div id="fin"></div>
-
   <script src="../js/script.js"></script>
 
 </body>
