@@ -136,14 +136,6 @@ LISTA DE CONTENIDOS
   font-style: italic;
 }
 
-/* Berkshire */
-
-.berkshire-swash-regular {
-  font-family: "Berkshire Swash", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /******************************/
 /*    02.Colores y Estilos    */
 /******************************/
@@ -152,7 +144,7 @@ LISTA DE CONTENIDOS
   --principal: #6b4226;
   --secundario: #3b2813;
   --tercero: #ab4d00;
-  --sombra-principal: #8c6a4d;
+  --sombra-principal: #9e8772;
   --apoyo:  #8c4f0d;
   --resaltar: #f2e7dc;
   --estaciones: #6e1400;
@@ -165,8 +157,8 @@ LISTA DE CONTENIDOS
   --sombra-tierra: 0.1rem 0.1rem 0.3rem rgba(139, 69, 19, 0.5), 0 0 1.5rem rgba(210, 180, 140, 0.6);
   --sombra-inset: rgba(68, 42, 13, 0.05);
   --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-  --fontPrincipal: Berkshire Swash, serif;
-  --fontSecundaria: Poppins;
+  --fontPrincipal: "Poppins", serif;
+  --fontSecundaria: "Poppins", serif;
 }
 
 /******************************/
@@ -496,8 +488,8 @@ body {
 }
 
 .cita {
-  width: 80%;
-  max-width: 45rem;
+  width: 55%;
+
   margin: 8em auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.85);
@@ -513,6 +505,7 @@ body {
 .cita--texto {
   font-family: var(--fontPrincipal);
   font-size: 3rem;
+  font-weight: 700;
   color: var(--principal);
   margin: 0;
 }
@@ -765,6 +758,7 @@ input[id^="modal"] {
 
 .receta--titulo>header {
   color: var(--tercero);
+  font-weight: 500;
   font-family: var(--fontPrincipal);
 }
 
@@ -776,16 +770,11 @@ input[id^="modal"] {
   margin-top: 1.5rem;
 }
 
-.receta--detalles--lista .detalle {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: var(--apoyo);
-  margin: 0;
-}
 
 .receta--detalles--lista p {
   color: var(--secundario);
 }
+
 
 .receta--boton--informacion {
   display: flex;
@@ -803,6 +792,12 @@ input[id^="modal"] {
   text-decoration: none;
 }
 
+.receta--detalles--lista .detalle {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--apoyo);
+  margin: 0;
+}
 /******************************/
 /*       09.Modelo Receta      */
 /******************************/
