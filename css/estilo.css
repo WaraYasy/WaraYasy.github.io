@@ -631,13 +631,16 @@ body {
 
 .tarjeta>h2 {
   font-family: var(--fontPrincipal);
-  text-shadow: var(--sombra-texto);
   font-size: 1.5rem;
   color: var(--resaltar);
   position: absolute;
   top: 1.25rem;
   left: 1.25rem;
   z-index: 999;
+
+  background-color: var(--estaciones);
+  border-radius: 0.5rem;
+  padding: 0 .5rem;
 }
 
 .tarjeta>.tags {
