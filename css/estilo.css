@@ -2055,3 +2055,6 @@ textarea {
   }
 
 }
+body{
+  filter: grayscale(100%) contrast(100%) brightness(80%);
+}
