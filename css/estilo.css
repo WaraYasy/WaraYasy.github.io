@@ -1026,7 +1026,7 @@ audio {
 /******************************/
 /*           12.Footer        */
 /******************************/
-.omitir_footer{
+.omitir{
   display: none;
 }
 
@@ -1081,6 +1081,8 @@ audio {
 
 .footer--enlace-item {
   margin: 0.3125rem 0;
+  text-decoration: underline ;
+  
 }
 
 .footer--enlace {
@@ -2055,3 +2057,4 @@ textarea {
   }
 
 }
+

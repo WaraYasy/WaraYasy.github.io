@@ -20,17 +20,18 @@
 <body>
   <header>
     <div class="encabezado">
-      <img src="../imagenes/Casia-resaltar.svg" alt="Casia - Recetario Estacional" role="img" aria-label="Logo de Casia">
+      <img src="../imagenes/Casia-resaltar.svg" alt="" class="icon" role="none" aria-label="Logo de Casia">
       <h1 class="encabezado--titulo" id="titulo-principal">CONTACTO</h1>
       <div class="encabezado--separador"></div>
     </div>
   </header>
 
   <!-- Barra de navegación -->
+  <a href="#main" class="omitir" aria-label="Omitir Cabecera">Saltar Cabecera</a>
   <nav class="menu" role="navigation" aria-label="Menú principal">
     <div class="menu--etiqueta">
       <a href="../index.html" aria-label="Ir al inicio de la página">
-        <img src="../imagenes/Casia.png" alt="Casia" class="menu--logo">
+        <img src="../imagenes/Casia.png" alt="Inicio" aria-label="Volver al inicio"  class="menu--logo">
       </a>
     </div>
     <div class="menu--separador"></div>
@@ -41,9 +42,10 @@
       <div class="menu--item"><a href="contacto.html" aria-label="Ir a la sección de contacto">Contacto</a></div>
     </div>
   </nav>
+
   <!-- Fin barra de navegación -->
 
-  <main>
+  <main id="main">
     <section class="contact-grid" aria-labelledby="titulo-principal">
       <!-- Formulario de contacto -->
       <div class="contact-form" role="form" aria-labelledby="contacto-formulario">
@@ -80,7 +82,7 @@
           </div>
           
           <div class="contenedor-envio-recetas--grupo-formulario">
-            <input type="submit" value="Enviar" id="boton-envio-receta" class="contenedor-envio-recetas--boton-formulario" aria-label="Enviar mensaje">
+            <input type="submit" value="Enviar Mensaje" id="boton-envio-receta" class="contenedor-envio-recetas--boton-formulario" aria-label="Enviar mensaje">
           </div>
         </form>
       </div>
@@ -95,7 +97,7 @@
           inspiradas en los ingredientes frescos de cada estación y en las
           festividades más especiales.
         </p>
-        <button class="contenedor-envio-recetas--boton-formulario" disabled aria-disabled="true">
+        <button class="contenedor-envio-recetas--boton-formulario" disabled aria-disabled="true" value="Suscripcion de Newsletter">
           ¡Muy Pronto!
         </button>
       </div>
@@ -106,21 +108,21 @@
 
         <!-- Teléfono -->
         <div class="contact-item">
-          <img src="../imagenes/circulo-de-telefono.png" alt="Teléfono" class="icon">
+          <img src="../imagenes/circulo-de-telefono.png" alt="" class="icon" role="none">
           <p><a href="tel:+123456789" class="enlace--contacto" aria-label="Llamar al teléfono (+34) 678 765 665">(+34) 678 765 665</a></p>
           <p>¿Te interesa colaborar con nosotros? ¡Llámanos!</p>
         </div>
 
         <!-- Correo -->
         <div class="contact-item">
-          <img src="../imagenes/sobre.png" alt="Correo electrónico" class="icon">
+          <img src="../imagenes/sobre.png" alt="" class="icon" role="none" class="icon">
           <p><a href="mailto:contacto@casia.com" class="enlace--contacto" aria-label="Enviar un correo a contacto@casia.com">contacto@casia.com</a></p>
           <p>Envíanos tus dudas y consultas.</p>
         </div>
 
         <!-- Ubicación -->
         <div class="contact-item">
-          <img src="../imagenes/marcador.png" alt="Ubicación" class="icon">
+          <img src="../imagenes/marcador.png" alt="" class="icon" role="none"class="icon">
           <p>Vitoria-Gasteiz, Álava, España</p>
           <p>Nuestro equipo trabaja desde la capital Alvesa</p>
         </div>
@@ -129,10 +131,10 @@
   </main>
 
   <footer class="footer" aria-labelledby="footer-titulo">
-    <a href="#fin" class="omitir_footer" aria-label="Omitir el footer">Omitir Footer</a>
+    <a href="#fin" class="omitir" aria-label="Omitir el footer">Omitir Footer</a>
     <div class="footer--contenedor">
       <div class="footer--columna footer--columna--logo">
-        <img src="../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo">
+        <img src="../imagenes/casia-logo.png" alt="" class="icon" role="none"class="footer--logo">
         <h2 class="footer--titulo" id="footer-titulo">Recetario Estacional</h2>
       </div>
       <div class="footer--columna footer--columna--enlaces">

@@ -21,9 +21,10 @@
 <body>
   <header>
     <!-- Barra de navegación -->
+    <a href="#main" class="omitir" aria-label="Omitir Cabecera">Saltar Cabecera</a>
     <nav class="menu" aria-label="Menú de navegación principal">
       <div class="menu--etiqueta">
-        <a href="index.html" title="Inicio"><img src="imagenes/Casia.png" alt="Logotipo de Casia" class="menu--logo"></a>
+        <a href="index.html" title="Inicio"><img src="imagenes/Casia.png" alt="Logotipo de Casia" class="menu--logo" tabindex="1"></a>
       </div>
       <div class="menu--separador" aria-hidden="true"></div>
       <div class="menu--items">
@@ -35,13 +36,13 @@
     </nav>
     <!-- Fin barra de navegación -->
   </header>
-  <main>
+  <main id="main">
     <section class="portada" id="seccion1">
       <div class="portada--cuadro">
-        <h1 class="portada--titulo">Recetario</h1>
+        <h1 class="portada--titulo" tabindex="2">Recetario</h1>
         <h1 class="portada--titulo">Estacional</h1>
         <p class="portada--descripcion">Un viaje de sabores por cada estación del año</p>
-        <a href="#seccion2" class="portada--flecha" aria-label="Ir a la sección 2">
+        <a href="#seccion2" class="portada--flecha" aria-label="Ir a la sección 2" tabindex="3"> 
           <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 5L25 25L45 5" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
           </svg>
@@ -51,23 +52,23 @@
     <section class="seccion2" id="seccion2">
       <div class="cita--contenedor">
         <blockquote class="cita">
-          <p class="cita--texto">
+          <p class="cita--texto" tabindex="4">
             Comer los frutos de la época es saborear la naturaleza en su mejor momento. Cada bocado nos conecta con el
             ciclo de las estaciones, llenando nuestros platos de frescura, color y aroma.
           </p>
           <footer class="cita--footer">
-            <cite><a class="cita--enlace" title="Ver Recetario" href="html/recetario.html">Recetario Completo</a></cite>
+            <cite><a class="cita--enlace" title="Ver Recetario" href="html/recetario.html" tabindex="4">Recetario Completo</a></cite>
           </footer>
         </blockquote>
       </div>
     </section>
 
     <section class="seccion-tarjetas" id="estaciones">
-      <div class="seccion-tarjetas--contenedor">
-        <div class="tarjeta tarjetat estaciones--invierno file-card" data-url="./html/recetario.html#invierno">
+      <div class="seccion-tarjetas--contenedor" >
+        <div class="tarjeta tarjetat estaciones--invierno file-card" data-url="./html/recetario.html#invierno" tabindex="5">
           <div class="circulo">
             <a href="html/recetario.html#invierno" title="Ver Recetas de Invierno">
-              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Invierno">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de invierno">
             </a>
           </div>
           <h2>Invierno</h2>
@@ -77,10 +78,10 @@
           </div>
         </div>
 
-        <div class="tarjeta tarjetat estaciones--primavera file-card" data-url="./html/recetario.html#primavera">
+        <div class="tarjeta tarjetat estaciones--primavera file-card" data-url="./html/recetario.html#primavera" tabindex="6">
           <div class="circulo">
             <a href="html/recetario.html#primavera" title="Ver Recetario de Primavera">
-              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Primavera">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de primavera">
             </a>
           </div>
           <h2>Primavera</h2>
@@ -90,10 +91,10 @@
           </div>
         </div>
 
-        <div class="tarjeta tarjetat estaciones--verano file-card" data-url="./html/espera.html">
+        <div class="tarjeta tarjetat estaciones--verano file-card" data-url="./html/espera.html" tabindex="7">
           <div class="circulo">
             <a href="html/espera.html" title="Ver Recetario de Verano">
-              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Verano">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de verano">
             </a>
           </div>
           <h2>Verano</h2>
@@ -103,10 +104,10 @@
           </div>
         </div>
 
-        <div class="tarjeta tarjetat estaciones--otono file-card" data-url="./html/recetario.html#otono">
+        <div class="tarjeta tarjetat estaciones--otono file-card" data-url="./html/recetario.html#otono" tabindex="9">
           <div class="circulo">
             <a href="html/recetario.html#otono" title="Ver Recetario de Otoño">
-              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Otoño">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de otoño">
             </a>
           </div>
           <h2>Otoño</h2>
@@ -117,11 +118,11 @@
         </div>
       </div>
 
-      <div class="seccion-tarjetas--festividades file-card" data-url="./html/espera.html">
+      <div class="seccion-tarjetas--festividades file-card" data-url="./html/espera.html" tabindex="10">
         <div class="tarjeta tarjetat festividades">
           <div class="circulo">
             <a href="html/espera.html" title="Ver de Fiestas">
-              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Ver más información sobre Festividades">
+              <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de festividades">
             </a>
           </div>
           <h2>Festividades</h2>
@@ -132,27 +133,27 @@
       </div>
     </section>
 
-    <div id="aviso-cookies" class="aviso-cookies" aria-labelledby="aviso-cookies">
+    <div id="aviso-cookies" class="aviso-cookies" aria-labelledby="aviso-cookies" tabindex="0">
       <p>
-        <img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Icono de galleta de jengibre" aria-hidden="true">
+        <img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Icono de galleta de jengibre" aria-hidden="true" >
         <img src="imagenes/hombre-jengibre-rojo.png" alt="Icono de galleta de jengibre roja" aria-hidden="true">
         <img src="imagenes/hombre-de-pan-de-jengibre.png" alt="Icono de galleta de jengibre" aria-hidden="true">
       </p>
       <p>Este sitio usa cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
       <p>
-        <button id="aceptar-btn" aria-label="Aceptar cookies">Aceptar</button>
-        <button id="rechazar-btn" aria-label="Rechazar cookies">Rechazar</button>
+        <button id="aceptar-btn" aria-label="Aceptar cookies" value="Aceptar cookies" tabindex="-1">Aceptar</button>
+        <button id="rechazar-btn" aria-label="Rechazar cookies" value="Rechazar cookies" tabindex="-2">Rechazar</button>
       </p>
     </div>
 
   </main>
 
   <footer class="footer">
-    <a href="#fin" class="omitir_footer" title="Omitir el footer">Omitir Footer</a>
+    <a href="#fin" class="omitir" title="Omitir el footer">Omitir Footer</a>
     <div class="footer--contenedor">
       <div class="footer--columna footer--columna--logo">
         <img src="imagenes/casia-logo.png" alt="Logotipo de Casia Recetario" class="footer--logo" aria-hidden="true">
-        <h2 class="footer--titulo">Recetario Estacional</h2>
+        <h2 class="footer--titulo" tabindex="11">Recetario Estacional</h2>
       </div>
       <div class="footer--columna footer--columna--enlaces">
         <h3 class="footer--subtitulo">Enlaces Útiles</h3>

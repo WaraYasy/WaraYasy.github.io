@@ -20,17 +20,18 @@
 <body>
     <header>
         <div class="encabezado">
-            <img src="../../imagenes/Casia-resaltar.svg" alt="Logo de Casia con diseño estilizado" title="Logo Casia" role="img" aria-label="Logo de Casia con diseño estilizado">
+            <img src="../../imagenes/Casia-resaltar.svg" alt="" class="icon" role="none" aria-label="Logo de Casia con diseño estilizado">
             <h1 class="encabezado--titulo" id="titulo-cupcake">Cupcake de Otoño</h1>
             <div class="encabezado--separador"></div>
         </div>
     </header>
 
     <!-- Barra de navegación -->
+    <a href="#main" class="omitir" aria-label="Omitir Cabecera">Saltar Cabecera</a>
     <nav class="menu" role="navigation" aria-label="Menú de navegación principal">
         <div class="menu--etiqueta">
             <a href="../../index.html" aria-label="Volver a la página de inicio">
-                <img src="../../imagenes/Casia.png" alt="Logo de Casia" class="menu--logo" title="Logo Casia">
+                <img src="../../imagenes/Casia.png" alt="Inicio" aria-label="Volver al inicio" class="menu--logo" title="Logo Casia">
             </a>
         </div>
         <div class="menu--separador"></div>
@@ -43,7 +44,7 @@
     </nav>
     <!-- Fin barra de navegación -->
 
-    <main>
+    <main id="main">
         <section class="postre" aria-labelledby="titulo-cupcake">
             <div class="postre--encabezado">
                 <img class="postre--imagen" src="../../imagenes/cupvake_calabaza_ot.jpg"
@@ -53,7 +54,7 @@
                     <h1 class="postre--titulo" id="titulo-receta">Cupcake de calabaza con especias y frutos secos</h1>
                     <div class="receta--estacion" aria-labelledby="titulo-receta">
                         <div class="receta--estacion--icono">
-                            <img src="../../imagenes/hojas-de-otono.png" title="Receta Otoño" alt="Icono de hojas de otoño" role="img" aria-label="Icono de hojas de otoño, símbolo de la estación">
+                            <img src="../../imagenes/hojas-de-otono.png" title="Receta Otoño" alt="" class="icon" role="none">
                         </div>
                     </div>
                     <p class="derechos-autor">Foto de Vojtech Okenka</p>
@@ -112,20 +113,92 @@
                     </div>
                 </div>
                 <div class="track-barra">
-                    <audio controls title="Rolling Stones & Co">
+                    <audio controls title="Rolling Stones & Co" aria-describedby="transcripcion"> 
                         <source src="../../audio/You-Cant-Always-Get-What-You-Want.mp3" type="audio/mpeg">
                         Tu navegador no soporta el elemento de audio.
                     </audio>
+                    <details id="transcripcion">
+                        <summary>Transcripción del audio</summary>
+                        <p>
+                            I saw her today at the reception<br>
+                            A glass of wine in her hand<br>
+                            I knew she would meet her connection<br>
+                            At her feet was her footloose man<br>
+                            No, you can't always get what you want<br>
+                            You can't always get what you want<br>
+                            You can't always get what you want<br>
+                            But if you try sometime you'll find<br>
+                            You get what you need<br>
+                            I saw her today at the reception<br>
+                            A glass of wine in her hand<br>
+                            I knew she was gonna meet her connection<br>
+                            At her feet was her footloose man<br>
+                            You can't always get what you want<br>
+                            You can't always get what you want<br>
+                            You can't always get what you want<br>
+                            But if you try sometimes, well, you might find<br>
+                            You get what you need<br>
+                            Ah, yeah<br>
+                            Oh<br>
+                            And I went down to the demonstration<br>
+                            To get my fair share of abuse<br>
+                            Singing, "We're gonna vent our frustration<br>
+                            If we don't we're gonna blow a fifty-amp fuse"<br>
+                            Sing it to me, honey<br>
+                            You can't always get what you want<br>
+                            You can't always get what you want<br>
+                            You can't always get what you want<br>
+                            But if you try sometimes, well, you just might find<br>
+                            You get what you need<br>
+                            Ah baby, yeah<br>
+                            Ah<br>
+                            I went down to the Chelsea drugstore<br>
+                            To get your prescription filled<br>
+                            I was standing in line with Mr. Jimmy<br>
+                            And, man, did he look pretty ill<br>
+                            We decided that we would have a soda<br>
+                            My favorite flavor, cherry red<br>
+                            I sung my song to Mr. Jimmy<br>
+                            Yeah, and he said one word to me, and that was "dead"<br>
+                            I said to him<br>
+                            You can't always get what you want, well no<br>
+                            You can't always get what you want. I tell you, baby<br>
+                            You can't always get what you want, no<br>
+                            But if you try sometimes you just might find, uh, mm<br>
+                            You get what you need, oh yeah, woo!<br>
+                            Ah, woo!<br>
+                            You get what you need, yeah, oh baby<br>
+                            Ah yeah<br>
+                            I saw her today at the reception<br>
+                            In her glass was a bleeding man<br>
+                            She was practiced at the art of deception<br>
+                            Well, I could tell by her blood-stained hands, sing it<br>
+                            You can't always get what you want, yeah<br>
+                            You can't always get what you want, ooh yeah, child<br>
+                            You can't always get what you want<br>
+                            But if you try sometimes you just might find<br>
+                            You just might find<br>
+                            You get what you need, ah yeah<br>
+                            Ah baby, woo!<br>
+                            Ah, you can't always get what you want, no, no, baby<br>
+                            You can't always get what you want, you can't now, now<br>
+                            You can't always get what you want<br>
+                            But if you try sometimes you just might find<br>
+                            You just might find that you<br>
+                            You get what you need, oh yeah<br>
+                            Ah yeah, do that<br>
+                          </p>                          
+                      </details>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer" aria-labelledby="footer-titulo">
-        <a href="#fin" class="omitir_footer" aria-label="Omitir Footer">Omitir Footer</a>
+        <a href="#fin" class="omitir" aria-label="Omitir Footer">Omitir Footer</a>
         <div class="footer--contenedor">
             <div class="footer--columna footer--columna--logo">
-                <img src="../../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo" title="Logo de Casia" role="img" aria-label="Logo de Casia">
+                <img src="../../imagenes/casia-logo.png" alt="Logo del Recetario" class="footer--logo" alt="" class="icon" role="none">
                 <h2 class="footer--titulo" id="footer-titulo">Recetario Estacional</h2>
             </div>
             <div class="footer--columna footer--columna--enlaces">

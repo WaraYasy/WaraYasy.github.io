@@ -20,17 +20,18 @@
 <body>
   <header>
     <div class="encabezado">
-      <img src="../imagenes/Casia-resaltar.svg" alt="Logo de Casia - Recetario Estacional" title="Logo de Casia, Recetario Estacional" role="img" aria-label="Logo de Casia">
+      <img src="../imagenes/Casia-resaltar.svg" alt="" class="icon" role="none" title="Logo de Casia, Recetario Estacional" role="img" aria-label="Logo de Casia">
       <h1 class="encabezado--titulo">RECETARIO</h1>
       <div class="encabezado--separador"></div>
     </div>
   </header>
 
   <!-- Barra de navegación -->
+  <a href="#main" class="omitir" aria-label="Omitir Cabecera">Saltar Cabecera</a>
   <nav class="menu" role="navigation" aria-label="Menú principal">
     <div class="menu--etiqueta">
       <a href="../index.html" title="Ir a la página principal de Casia" aria-label="Ir al inicio">
-        <img src="../imagenes/Casia.png" alt="Casia" class="menu--logo" aria-hidden="true">
+        <img src="../imagenes/Casia.png" alt="Inicio" aria-label="Volver al inicio" class="menu--logo" aria-hidden="true">
       </a>
     </div>
     <div class="menu--separador"></div>
@@ -51,7 +52,7 @@
   </nav>
   <!-- Fin barra de navegación -->
 
-  <main>
+  <main id="main">
     <section id="formulario-compartir" aria-labelledby="formulario-titulo" >
       <div id="contenedor-envio-recetas" class="contenedor-envio-recetas">
         <h1 id="formulario-titulo" class="contenedor-envio-recetas--titulo">&bull; Envía tu Receta &bull;</h1>
@@ -103,7 +104,7 @@
   </main>
 
   <footer class="footer" aria-labelledby="footer-titulo">
-    <a href="#fin" class="omitir_footer">Omitir Footer</a>
+    <a href="#fin" class="omitir">Omitir Footer</a>
     <div class="footer--contenedor">
       <div class="footer--columna footer--columna--logo">
         <img src="../imagenes/casia-logo.png" alt="Logo de Casia Recetario Estacional" class="footer--logo" aria-hidden="true">
