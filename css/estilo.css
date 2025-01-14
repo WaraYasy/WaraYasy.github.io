@@ -22,6 +22,7 @@ LISTA DE CONTENIDOS
 16. Media Tablets
 17. Media Móviles 
 18. Media Print  
+19. Accesibilidad
 */
 
 /******************************/
@@ -2058,3 +2059,21 @@ textarea {
 
 }
 
+/******************************/
+/*      19.Accesibilidad      */
+/******************************/
+body, section, div, footer{
+  background-color: white !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a{
+  color: #000!important;
+  text-shadow: none !important;
+}
+img{
+  filter: grayscale() !important;
+}
+
+.menu div{
+  background-color: none !important;
+}
