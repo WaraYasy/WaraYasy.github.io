@@ -20,7 +20,7 @@
 <body>
   <header>
     <div class="encabezado">
-      <img src="../imagenes/Casia-resaltar.svg" alt="" class="icon" role="none" aria-label="Logo de Casia">
+      <img src="../imagenes/Casia-resaltar.svg" alt="" class="icon">
       <h1 class="encabezado--titulo" id="titulo-principal">CONTACTO</h1>
       <div class="encabezado--separador"></div>
     </div>
@@ -28,7 +28,7 @@
 
   <!-- Barra de navegación -->
   <a href="#main" class="omitir" aria-label="Omitir Cabecera">Saltar Cabecera</a>
-  <nav class="menu" role="navigation" aria-label="Menú principal">
+  <nav class="menu" aria-label="Menú principal">
     <div class="menu--etiqueta">
       <a href="../index.html" aria-label="Ir al inicio de la página">
         <img src="../imagenes/Casia.png" alt="Inicio" aria-label="Volver al inicio"  class="menu--logo">
@@ -49,32 +49,36 @@
     <section class="contact-grid" aria-labelledby="titulo-principal">
       <!-- Formulario de contacto -->
       <div class="contact-form" role="form" aria-labelledby="contacto-formulario">
-        <h2 id="contacto-formulario">Contáctanos</h2>
+        <h2 id="contacto-formulario" tabindex="0" >Contáctanos</h2>
         <form action="#" method="post" id="formulario-envio-recetas" class="contenedor-envio-recetas--formulario"
           enctype="multipart/form-data">
           
           <div class="contenedor-envio-recetas--grupo-formulario">
             <label for="nombre-emisor" class="contenedor-envio-recetas--etiqueta-formulario">Nombre</label>
             <input type="text" placeholder="Tu nombre" name="nombre" id="nombre-emisor"
-              class="contenedor-envio-recetas--input-formulario" aria-required="true" required>
+              class="contenedor-envio-recetas--input-formulario" aria-required="true" required
+              title="Campo obligatorio">
           </div>
           
           <div class="contenedor-envio-recetas--grupo-formulario">
             <label for="mail-emisor" class="contenedor-envio-recetas--etiqueta-formulario">Correo Electrónico</label>
             <input type="email" placeholder="nombre@ejemplo.com" name="mail" id="mail-emisor"
-              class="contenedor-envio-recetas--input-formulario" aria-required="true" required>
+              class="contenedor-envio-recetas--input-formulario" aria-required="true" required
+              title="Campo obligatorio">
           </div>
           
           <div class="contenedor-envio-recetas--grupo-formulario">
             <label for="consulta-input" class="contenedor-envio-recetas--etiqueta-formulario">Escribe tu mensaje</label>
             <textarea name="consulta" placeholder="Escribe aquí" id="consulta-input"
-              class="contenedor-envio-recetas--textarea-formulario" aria-required="true" required></textarea>
+              class="contenedor-envio-recetas--textarea-formulario" aria-required="true" required
+              title="Campo obligatorio"></textarea>
           </div>
           
-          <div class="contenedor-envio-recetas--grupo-formulario politicas" role="group" aria-labelledby="politicas-titulo">
-            <input name="consentimiento" id="instrucciones-input" type="radio"
-              class="contenedor-envio-recetas--textarea-formulario" aria-required="true" required>
-            <label for="instrucciones-input">Acepto las
+          <div class="contenedor-envio-recetas--grupo-formulario politicas" role="group" aria-labelledby="instrucciones">
+            <input name="consentimiento" id="instrucciones" type="radio"
+              class="contenedor-envio-recetas--textarea-formulario" aria-required="true" required
+              title="Es necesario que aceptes las condiciones para enviar tu mensaje.">
+            <label for="instrucciones">Acepto las
               <a href="https://www.aepd.es/derechos-y-deberes/ejerce-tus-derechos" target="-blank" aria-label="Ver políticas de privacidad">Políticas de Privacidad</a>
               y
               <a href="https://policies.google.com/privacy#whycollect" target="-blank" aria-label="Ver política de cookies">Política de Cookies</a>. Puedes
@@ -90,14 +94,14 @@
       <!-- Newsletter -->
       <div class="newsletter" aria-labelledby="newsletter-titulo">
         <h2 id="newsletter-titulo">Nuestro Newsletter</h2>
-        <input type="email" placeholder="Email" aria-label="Suscríbete a nuestro boletín" />
+        <input type="email" placeholder="Pronto estará disponible." aria-label="Suscríbete a nuestro boletín" title="Campo obligatorio para recibir newsletter" readonly>
         <p>
           ¡Suscríbete a nuestro boletín y lleva la magia de cada temporada a
           tu cocina! Recibe recetas exclusivas y fáciles de preparar,
           inspiradas en los ingredientes frescos de cada estación y en las
           festividades más especiales.
         </p>
-        <button class="contenedor-envio-recetas--boton-formulario" disabled aria-disabled="true" value="Suscripcion de Newsletter">
+        <button class="contenedor-envio-recetas--boton-formulario" disabled aria-disabled="true" value="Suscripcion de Newsletter" tabindex="0">
           ¡Muy Pronto!
         </button>
       </div>
@@ -108,23 +112,23 @@
 
         <!-- Teléfono -->
         <div class="contact-item">
-          <img src="../imagenes/circulo-de-telefono.png" alt="" class="icon" role="none">
+          <img src="../imagenes/circulo-de-telefono.png" alt="" class="icon" >
           <p><a href="tel:+123456789" class="enlace--contacto" aria-label="Llamar al teléfono (+34) 678 765 665">(+34) 678 765 665</a></p>
           <p>¿Te interesa colaborar con nosotros? ¡Llámanos!</p>
         </div>
 
         <!-- Correo -->
         <div class="contact-item">
-          <img src="../imagenes/sobre.png" alt="" class="icon" role="none" class="icon">
+          <img src="../imagenes/sobre.png" alt="" class="icon">
           <p><a href="mailto:contacto@casia.com" class="enlace--contacto" aria-label="Enviar un correo a contacto@casia.com">contacto@casia.com</a></p>
           <p>Envíanos tus dudas y consultas.</p>
         </div>
 
         <!-- Ubicación -->
         <div class="contact-item">
-          <img src="../imagenes/marcador.png" alt="" class="icon" role="none"class="icon">
-          <p>Vitoria-Gasteiz, Álava, España</p>
-          <p>Nuestro equipo trabaja desde la capital Alvesa</p>
+          <img src="../imagenes/marcador.png" alt="" class="icon">
+          <p><a href="https://maps.app.goo.gl/npLuGakwdHTp6xk59" class="enlace--contacto" aria-label="Ubiacion de las oficinas de Casia">Vitoria-Gasteiz, Álava, España</a></p>
+          <p tabindex="-1">Nuestro equipo trabaja desde la capital Alvesa</p>
         </div>
       </div>
     </section>
@@ -134,8 +138,8 @@
     <a href="#fin" class="omitir" aria-label="Omitir el footer">Omitir Footer</a>
     <div class="footer--contenedor">
       <div class="footer--columna footer--columna--logo">
-        <img src="../imagenes/casia-logo.png" alt="" class="icon" role="none"class="footer--logo">
-        <h2 class="footer--titulo" id="footer-titulo">Recetario Estacional</h2>
+        <img src="../imagenes/casia-logo.png" alt="" class="icon footer--logo">
+        <h2 class="footer--titulo" id="footer-titulo" tabindex="0">Recetario Estacional</h2>
       </div>
       <div class="footer--columna footer--columna--enlaces">
         <h3 class="footer--subtitulo">Enlaces Útiles</h3>

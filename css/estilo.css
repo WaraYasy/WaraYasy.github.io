@@ -137,6 +137,14 @@ LISTA DE CONTENIDOS
   font-style: italic;
 }
 
+/* Berkshire */
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /******************************/
 /*    02.Colores y Estilos    */
 /******************************/
@@ -158,7 +166,7 @@ LISTA DE CONTENIDOS
   --sombra-tierra: 0.1rem 0.1rem 0.3rem rgba(139, 69, 19, 0.5), 0 0 1.5rem rgba(210, 180, 140, 0.6);
   --sombra-inset: rgba(68, 42, 13, 0.05);
   --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-  --fontPrincipal: "Poppins", serif;
+  --fontPrincipal: "Berkshire Swash", serif;
   --fontSecundaria: "Poppins", serif;
 }
 
@@ -1058,7 +1066,6 @@ audio {
 .footer--logo {
   width: 6.25rem;
   height: auto;
-  margin-bottom: 0.625rem;
 }
 
 .footer--titulo {
@@ -1305,9 +1312,7 @@ textarea {
 }
 
 .icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-bottom: 0.3125rem;
+  width: 6rem;
   vertical-align: middle;
 }
 
@@ -2062,7 +2067,7 @@ textarea {
 /******************************/
 /*      19.Accesibilidad      */
 /******************************/
-body, section, div, footer{
+/* body, section, div, footer{
   background-color: white !important;
 }
 
@@ -2076,4 +2081,4 @@ img{
 
 .menu div{
   background-color: none !important;
-}
+} */
