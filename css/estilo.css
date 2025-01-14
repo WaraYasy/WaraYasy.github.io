@@ -168,6 +168,7 @@ LISTA DE CONTENIDOS
   --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   --fontPrincipal: "Berkshire Swash", serif;
   --fontSecundaria: "Poppins", serif;
+  --fontAlternativa: "Lexend", serif;
 }
 
 /******************************/
@@ -705,7 +706,7 @@ input[id^="modal"] {
   position: fixed;
   padding: 0.5em 0.8em;
   right: 0.05em;
-  top: 0.5em;
+  top: 1em;
   display: none;
   z-index: 1000;
 
@@ -1312,7 +1313,7 @@ textarea {
 }
 
 .icon {
-  width: 6rem;
+  width: 4rem;
   vertical-align: middle;
 }
 
@@ -2067,18 +2068,213 @@ textarea {
 /******************************/
 /*      19.Accesibilidad      */
 /******************************/
-/* body, section, div, footer{
+/* Boton  */
+.boton_fix{
+  padding: 0.5rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  letter-spacing: .02rem;
+  transition: all 0.3s ease-in-out;
+  margin: 0.3rem 0;
+}
+
+.boton_fix:hover{
+  background-color:white ;
+  color: #000;
+  border: 0.1rem solid #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.bnw {
   background-color: white !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a{
+.bnw section, .bnw div, .bnw footer{
+  background-color: white !important;
+}
+
+.bnw h1, .bnw h2, .bnw h3, .bnw h4, .bnw h5, .bnw h6, .bnw p, .bnw span, .bnw a{
   color: #000!important;
   text-shadow: none !important;
 }
-img{
+
+.bnw img{
   filter: grayscale() !important;
 }
 
-.menu div{
-  background-color: none !important;
-} */
+.bnw .menu {
+  background-color: white;
+}
+
+.bnw .menu--etiqueta, .bnw .menu--logo, .bnw .menu--items, .bnw .menu--item, .bnw .menu--item a{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.bnw .portada--cuadro{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.bnw .portada {
+  background-image: url("../imagenes/pastel.jpg");
+  filter: grayscale();
+}
+
+.bnw .cita--enlace {
+  border-color: #000;
+}
+
+.bnw .circulo{
+  background-color: black !important;
+}
+
+.bnw .circulo img{
+  filter: none;
+}
+
+.bnw .tags{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.bnw .tarjeta>h2{
+  color: #000;
+  background-color: white !important;
+}
+
+.bnw .tarjeta.tarjetat.estaciones--verano, 
+.bnw .tarjeta.tarjetat.estaciones--invierno,
+.bnw .tarjeta.tarjetat.estaciones--otono,
+.bnw .tarjeta.tarjetat.estaciones--primavera,
+.bnw .tarjeta.festividades{
+  filter: grayscale();
+} 
+
+.bnw .encabezado{
+  background-color: #000 !important;
+}
+.bnw .encabezado--titulo{
+  color: white !important;
+}
+.bnw .encabezado--titulo::before,
+.bnw .encabezado--titulo::after {
+  content: "·";
+  font-size: 1em;
+  color: white
+}
+
+.bnw .receta-container {
+  box-shadow: none;
+  border:0.1rem solid #000;
+}
+.bnw .receta .receta--estacion{
+  background-color: black !important;
+}
+.bnw .receta--estacion--icono{
+  background-color: rgb(0, 0, 0) !important;
+  border-radius: 50%;
+}
+.bnw .receta--estacion--icono img{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.bnw .receta--titulo>header {
+  color: #000;
+}
+
+.bnw .enlaceInterno{
+  color: white !important;
+  background-color: #000;
+  box-shadow: none;
+}
+.bnw .estacion-fija{
+  color: white !important;
+  background-color: #000;
+}
+.bnw .postre--etiqueta{
+  color:  black;
+  background-color: white;
+  border: 0.1rem solid black;
+}
+
+.bnw .postre--ingrediente-item,
+.bnw .postre--paso {
+  background-color: rgba(255, 255, 255, 0);
+  margin: .2rem 0;
+  border: 0.1rem solid black;
+}
+
+.bnw .postre--ingrediente-item:hover,
+.bnw .postre--paso:hover {
+  background-color: #504e4e90;
+}
+
+.bnw #contenedor-envio-recetas{
+  border-color: #000;
+}
+
+.bnw label{
+  color: #000 !important;
+}
+
+.bnw input[type="text"],
+.bnw input[type="email"],
+.bnw input[type="file"],
+.bnw textarea,
+.bnw select {
+  border-color: #47454497;
+}
+
+.bnw input[type="text"]:focus,
+.bnw input[type="email"]:focus,
+.bnw textarea:focus{
+  border-color: #343433 !important;
+}
+
+.bnw .contenedor-envio-recetas--boton-formulario{
+  background-color: #000;
+}
+
+.bnw .contenedor-envio-recetas--boton-formulario:hover{
+  background-color:#343433;
+}
+
+.bnw .newsletter{
+  border: 0.1rem solid #000;
+}
+
+.bnw .contact-item {
+  border: 0.1rem solid #000;
+}
+
+.bnw .contact-item .icon{
+  background-color:#000 ;
+  padding: 1rem;
+  border-radius: 30%;
+  width: 2rem;
+}
+
+.bnw .enlace--contacto:hover {
+  font-weight: 800;
+}
+
+.bnw .aviso-cookies{
+  color: white;
+  border: 0.1rem solid #000;
+}
+
+.bnw #rechazar-btn, #aceptar-btn{
+  background-color: #000;
+
+}
+.bnw #rechazar-btn:hover, .bnw #aceptar-btn:hover{
+    background-color: #343433 !important;
+}
+
+/* Modificar fuente */
+.fuente-alternativa h1, .fuente-alternativa h2, .fuente-alternativa h3,
+.fuente-alternativa h4, .fuente-alternativa h5, .fuente-alternativa h6,
+.fuente-alternativa p, .fuente-alternativa a, .fuente-alternativa span,
+.fuente-alternativa header {
+  font-family: var(--fontAlternativa)!important;
+}

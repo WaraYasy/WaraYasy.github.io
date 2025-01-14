@@ -64,3 +64,72 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Botón blanco y negro
+  const botonBN = document.getElementById('byn');
+  const esModoBN = localStorage.getItem('modoBN') === 'true';
+
+  // Aplicar el modo BN si es que está activado
+  if (esModoBN) {
+    document.body.classList.add('bnw');
+    botonBN.innerText = 'Modo Normal'; 
+  } else {
+    botonBN.innerText = 'Blanco y Negro';  
+  }
+
+  // Función para alternar el modo BN
+  function cambiarModoBN(event) {
+    event.preventDefault();
+
+    document.body.classList.toggle('bnw');
+    const nuevoModoBN = document.body.classList.contains('bnw');
+    localStorage.setItem('modoBN', nuevoModoBN);
+
+    if (nuevoModoBN) {
+      botonBN.innerText = 'Modo Normal';
+    } else {
+      botonBN.innerText = 'Blanco y Negro';
+    }
+  }
+
+  // Asignar el evento al botón BN
+  botonBN.addEventListener('click', cambiarModoBN);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botonFuente = document.getElementById('cambiar-fuente');
+  const esFuenteAlternativa = localStorage.getItem('fuenteAlternativa') === 'true';
+
+  // Si el modo de fuente alternativa está activado, lo aplicamos al body
+  if (esFuenteAlternativa) {
+    document.body.classList.add('fuente-alternativa');
+    botonFuente.innerText = 'Fuente Predeterminada';  // Cambiar el texto del botón
+  } else {
+    botonFuente.innerText = 'Cambiar Fuente';  // Texto por defecto
+  }
+
+  // Función para alternar entre fuentes
+  function cambiarFuente(event) {
+    event.preventDefault();
+
+    // Alternamos la clase .fuente-alternativa en el body
+    document.body.classList.toggle('fuente-alternativa');
+
+    // Verificar si la fuente alternativa está activada
+    const nuevaFuente = document.body.classList.contains('fuente-alternativa');
+
+    // Guardar el estado en localStorage
+    localStorage.setItem('fuenteAlternativa', nuevaFuente);
+
+    // Cambiar el texto del botón
+    if (nuevaFuente) {
+      botonFuente.innerText = 'Fuente Predeterminada';
+    } else {
+      botonFuente.innerText = 'Cambiar Fuente';
+    }
+  }
+
+  // Asignar el evento al botón para cambiar la fuente
+  botonFuente.addEventListener('click', cambiarFuente);
+});
