@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Aplicar el modo BN si es que está activado
   if (esModoBN) {
     document.body.classList.add('bnw');
-    botonBN.innerText = 'Modo Normal'; 
+    botonBN.innerText = 'A Color'; 
   } else {
     botonBN.innerText = 'Blanco y Negro';  
   }
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem('modoBN', nuevoModoBN);
 
     if (nuevoModoBN) {
-      botonBN.innerText = 'Modo Normal';
+      botonBN.innerText = 'A Color';
     } else {
       botonBN.innerText = 'Blanco y Negro';
     }

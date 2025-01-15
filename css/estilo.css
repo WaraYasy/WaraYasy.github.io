@@ -2071,7 +2071,7 @@ textarea {
 /* Boton  */
 .boton_fix{
   padding: 0.5rem;
-  background-color: #000;
+  background-color: var(--principal);
   color: white;
   border: none;
   border-radius: 1rem;
@@ -2082,10 +2082,12 @@ textarea {
 
 .boton_fix:hover{
   background-color:white ;
-  color: #000;
-  border: 0.1rem solid #000;
+  color: var(--principal) !important;
+  border: 0.2rem solid var(--principal) ;
   transition: all 0.5s ease-in-out;
 }
+
+
 
 .bnw {
   background-color: white !important;
@@ -2150,12 +2152,30 @@ textarea {
   filter: grayscale();
 } 
 
-.bnw .encabezado{
+.bnw .encabezado, .bnw .encabezado-espera{
   background-color: #000 !important;
 }
+
+.bnw .espera-contenedor{
+  background: white !important;
+
+} 
+
+.bnw .espera--area--enlaceInterno{
+  background-color: white;
+  color: #000;
+  border:0.1rem solid #000;
+}
+
+.bnw .espera--area--enlaceInterno:hover{
+  background-color: #585858b7;
+  box-shadow: none;
+}
+
 .bnw .encabezado--titulo{
   color: white !important;
 }
+
 .bnw .encabezado--titulo::before,
 .bnw .encabezado--titulo::after {
   content: "·";
@@ -2271,6 +2291,17 @@ textarea {
     background-color: #343433 !important;
 }
 
+.bnw .boton_fix{
+  background-color: #000;
+  color: white;
+}
+
+.boton_fix:hover{
+  background-color:white !important;
+  color: #000 !important;
+  border-color: #000;
+}
+
 /* Modificar fuente */
 .fuente-alternativa h1, .fuente-alternativa h2, .fuente-alternativa h3,
 .fuente-alternativa h4, .fuente-alternativa h5, .fuente-alternativa h6,
@@ -2278,3 +2309,4 @@ textarea {
 .fuente-alternativa header {
   font-family: var(--fontAlternativa)!important;
 }
+
