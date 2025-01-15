@@ -2263,7 +2263,7 @@ textarea {
   border: 0.1rem solid #000;
 }
 
-.bnw #rechazar-btn, #aceptar-btn{
+.bnw #rechazar-btn, .bnw #aceptar-btn{
   background-color: #000;
 
 }
