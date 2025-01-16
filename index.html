@@ -25,7 +25,7 @@
     <a href="#main" class="omitir" aria-label="Omitir Cabecera">Saltar Cabecera</a>
     <nav class="menu" aria-label="Menú de navegación principal">
       <div class="menu--etiqueta">
-        <a href="index.html" title="Inicio"><img src="imagenes/Casia.png" alt="Logotipo de Casia" class="menu--logo"></a>
+        <a href="index.html" aria-label="Volver a la página de inicio" title="Inicio"><img src="imagenes/Casia.png" alt="Logotipo de Casia" class="menu--logo"></a>
       </div>
       <div class="menu--separador" aria-hidden="true"></div>
       <div class="menu--items">
@@ -68,7 +68,7 @@
       <div class="seccion-tarjetas--contenedor" >
         <div class="tarjeta tarjetat estaciones--invierno file-card" data-url="./html/recetario.html#invierno" tabindex="0">
           <div class="circulo">
-            <a href="html/recetario.html#invierno" title="Ver Recetas de Invierno" tabindex="-1">
+            <a href="html/recetario.html#invierno" title="Ver Recetas de Invierno" aria-label="Ver recetas de Invierno" tabindex="-1">
               <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de invierno">
             </a>
           </div>
@@ -81,7 +81,7 @@
 
         <div class="tarjeta tarjetat estaciones--primavera file-card" data-url="./html/recetario.html#primavera" tabindex="0">
           <div class="circulo">
-            <a href="html/recetario.html#primavera" title="Ver Recetario de Primavera" tabindex="-1">
+            <a href="html/recetario.html#primavera" title="Ver Recetario de Primavera" aria-label="Ver Recetario de Primavera" tabindex="-1">
               <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de primavera">
             </a>
           </div>
@@ -94,7 +94,7 @@
 
         <div class="tarjeta tarjetat estaciones--verano file-card" data-url="./html/espera.html" tabindex="0">
           <div class="circulo">
-            <a href="html/espera.html" title="Ver Recetario de Verano" tabindex="-1">
+            <a href="html/espera.html" title="Ver Recetario de Verano" aria-label="Ver Recetario de Verano" tabindex="-1">
               <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de verano">
             </a>
           </div>
@@ -107,7 +107,7 @@
 
         <div class="tarjeta tarjetat estaciones--otono file-card" data-url="./html/recetario.html#otono" tabindex="0">
           <div class="circulo">
-            <a href="html/recetario.html#otono" title="Ver Recetario de Otoño" tabindex="-1">
+            <a href="html/recetario.html#otono" title="Ver Recetario de Otoño" aria-label="Ver Recetario de Otoño" tabindex="-1">
               <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de otoño">
             </a>
           </div>
@@ -122,7 +122,7 @@
       <div class="seccion-tarjetas--festividades file-card" data-url="./html/espera.html" tabindex="0">
         <div class="tarjeta tarjetat festividades">
           <div class="circulo">
-            <a href="html/espera.html" title="Ver de Fiestas" tabindex="-1">
+            <a href="html/espera.html" title="Ver de Fiestas" aria-label="Ver Recetario Festivo" tabindex="-1">
               <img src="imagenes/cinnamon-roll-svgrepo-com.svg" alt="Imagen de roll de canela para ver recetas de festividades">
             </a>
           </div>
@@ -142,8 +142,9 @@
       </p>
       <p>Este sitio usa cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
       <p>
-        <button id="aceptar-btn" aria-label="Aceptar cookies" value="Aceptar cookies" >Aceptar</button>
+        <button id="aceptar-btn" aria-label="Aceptar cookies" value="Aceptar cookies">Aceptar</button>
         <button id="rechazar-btn" aria-label="Rechazar cookies" value="Rechazar cookies">Rechazar</button>
+        
       </p>
     </div>
 
@@ -178,8 +179,9 @@
             title="Cambiar a blanco y negro" aria-pressed="false">
             Blanco y Negro
         </button>
-        <button id="cambiar-fuente" class="boton_fix" aria-label="Cambiar la fuente de la página" 
-            title="Cambiar la fuente" aria-pressed="false">
+        <button id="cambiar-fuente" class="boton_fix" aria-label="Cambiar la fuente de la página"
+         title="Cambiar la fuente" aria-pressed="false">Cambiar Fuente</button>
+
             Cambiar Fuente
         </button>
     </div>
