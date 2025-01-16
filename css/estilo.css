@@ -995,7 +995,7 @@ audio {
   bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #f9f7f4bc;
+  background-color: #f9f7f4;
   color: var(--secundario);
   padding: 1.5em;
   border-radius: 0.5em;
