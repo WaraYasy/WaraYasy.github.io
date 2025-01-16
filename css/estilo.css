@@ -228,7 +228,7 @@ body {
 }
 
 .derechos-autor {
-  font-size: 0.6em;
+  font-size: 1em;
   color: var(--secundario);
   z-index: 100;
   margin: 0;
