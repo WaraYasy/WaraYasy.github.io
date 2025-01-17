@@ -487,7 +487,6 @@ body {
 /******************************/
 .seccion2 {
   width: 100%;
-  height: 100vh;
   margin-top: 2em;
 }
 
@@ -548,7 +547,6 @@ body {
 .seccion-tarjetas--contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  /* Se mantiene en em para control relativo */
   gap: 2em;
   width: 90%;
   padding: 2em;
@@ -560,7 +558,7 @@ body {
   flex-direction: row;
   width: 100%;
   height: 18.75rem;
-  ;
+  margin: auto;
   /* Ajustado proporcionalmente */
   justify-content: center;
   align-items: center;
@@ -1368,7 +1366,6 @@ textarea {
 .espera-contenedor {
   margin-top: 1em;
   width: 100%;
-  height: 95vh;
   background-image: url(../imagenes/fondo-espera.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1505,28 +1502,25 @@ textarea {
   .encabezado--titulo {
     font-size: 3em;
   }
-
-  /*Tarjetas Estaciones*/
-  .seccion2 {
-    padding: 2em 0;
-    margin-bottom: 5em;
-  }
-
-  .seccion-tarjetas--contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    width: 90%;
-    padding: 2rem;
-    margin: 2rem 0;
+ 
+  .seccion-tarjetas--contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .seccion-tarjetas {
-    padding-top: 8em;
     padding-bottom: 5em;
     margin-bottom: 5em;
   }
 
+  .receta--detalles--lista .detalle{
+    font-size: 1.8rem ;
+  }
+  
+  .receta--titulo>header {
+    font-size: 3rem;
+  }
 
   /* Receta */
   .postre {
@@ -1652,24 +1646,19 @@ textarea {
     font-size: 2em;
   }
 
-  /*Cita*/
-  .seccion2 {
-    padding: 2em 0;
-  }
-
   .cita--texto {
     font-size: 2em;
   }
-
 
   .footer {
     margin-top: 2em;
   }
 
   .receta-container {
+    margin: auto;
     width: 90%;
-    /* Ancho para móviles */
   }
+  
 
   /*Receta*/
   .postre {
@@ -1696,7 +1685,6 @@ textarea {
 
   .portada--informacion {
     grid-area: informacion;
-
     width: 100%;
     margin: 0;
   }
@@ -1753,8 +1741,36 @@ textarea {
   .contact-info {
     flex-direction: column;
   }
+
 }
 
+@media (max-width: 660px) {
+  .seccion-tarjetas--contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer--contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer--subtitulo{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .footer--columna {
+    margin: auto;
+    width: 50%;
+    justify-self: center;
+  }
+
+ 
+}
 
 /******************************/
 /*       18.Media Print       */
@@ -2249,6 +2265,12 @@ textarea {
 .bnw input[type="email"]:focus,
 .bnw textarea:focus{
   border-color: #343433 !important;
+}
+
+.bnw input[type="file"] {
+  background-color: rgba(255, 255, 255, 0);
+  color: #343433;
+  border: 0.1rem solid #000;
 }
 
 .bnw .contenedor-envio-recetas--boton-formulario{
