@@ -849,6 +849,19 @@ input[id^="modal"] {
   object-fit: cover;
 }
 
+/* Para Chrome */
+@supports (-webkit-appearance: none) {
+  .postre--imagen {
+    width: 40%; /* Más pequeña en Chrome */
+  }
+}
+
+/* Para Firefox */
+@-moz-document url-prefix() {
+  .postre--imagen {
+    width: 90%; /* Más grande en Firefox */
+  }
+}
 .postre--informacion {
   grid-area: informacion;
   padding: 0.9rem;
@@ -1170,7 +1183,7 @@ select {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.0625em;
-  padding: 0.5em 0;
+  padding: 0.5em;
   margin: 0.5em auto;
   width: 100%;
   transition: all 0.3s;
@@ -1180,7 +1193,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  border-bottom: solid 0.125em var(--principal);
+  border: solid 0.125em var(--principal);
 }
 
 input[type="file"] {
