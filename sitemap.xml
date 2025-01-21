@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
+  <url>
+    <loc>https://warayasy.github.io/</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Recetario -->
+  <url>
+    <loc>https://warayasy.github.io/recetario.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+    <!-- Contacto-->
+    <url>
+        <loc>https://warayasy.github.io/contacto.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Comparte tu receta-->
+    <url>
+        <loc>https://warayasy.github.io/formReceta.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Espera-->
+    <url>
+        <loc>https://warayasy.github.io/espera.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Bizcocho de Invierno -->
+    <url>
+        <loc>https://warayasy.github.io/Recetas/bizcocho-zanahoria.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Cupcake de Otoño-->
+    <url>
+        <loc>https://warayasy.github.io/Recetas/cupcake-otono.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

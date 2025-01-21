@@ -1406,11 +1406,25 @@ textarea {
   position: relative;
   bottom: 0;
   left: 0.1em;
+  z-index: 1;
+  margin: 1rem auto;
 }
 
 .espera--area--imagen>img {
   width: 20em;
   margin: 0;
+}
+
+.enlaces_utiles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.enlaces_utiles .espera--area--enlaceInterno{
+  padding: .5rem .8rem;
+  margin: 0.2rem;
 }
 
 .espera--area--enlace-contenedor {

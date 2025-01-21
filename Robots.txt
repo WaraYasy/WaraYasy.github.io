@@ -1,0 +1,27 @@
+# Permitir a todos los bots rastrear la mayoría del sitio
+User-agent: *
+Allow: /
+
+# Evitar el rastreo de parámetros de URLs
+Disallow: /*?*
+
+# Bloquear rastreadores sospechosos o maliciosos (User-agents conocidos)
+User-agent: BadBot
+Disallow: /
+
+User-agent: EvilScraper
+Disallow: /
+
+User-agent: 008
+Disallow: /
+
+# Opcional: bloquear cualquier User-Agent desconocido o sospechoso
+User-agent: *
+Crawl-delay: 10
+
+# Sugerencia para reducir rastreo excesivo (por bots no dañinos)
+Crawl-delay: 10
+
+# Incluir el sitemap para que los motores de búsqueda puedan indexar las recetas
+Sitemap: https://warayasy.github.io/sitemap.xml
+
