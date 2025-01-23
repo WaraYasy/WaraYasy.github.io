@@ -7,19 +7,5 @@ User-agent: Googlebot
 Allow: /
 Sitemap: https://warayasy.github.io/sitemap.xml
 
-# Evitar el rastreo de parámetros de URLs para otros bots
-User-agent: *
-Disallow: /*?*
-
-# Bloquear rastreadores sospechosos o maliciosos
-User-agent: BadBot
-Disallow: /
-
-User-agent: EvilScraper
-Disallow: /
-
-User-agent: 008
-Disallow: /
-
 # Sugerencia para reducir rastreo excesivo (opcional para bots no dañinos)
 Crawl-delay: 10
