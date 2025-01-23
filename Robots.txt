@@ -6,6 +6,3 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 Sitemap: https://warayasy.github.io/sitemap.xml
-
-# Sugerencia para reducir rastreo excesivo (opcional para bots no dañinos)
-Crawl-delay: 10
